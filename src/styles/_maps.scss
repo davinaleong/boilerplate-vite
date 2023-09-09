@@ -566,3 +566,21 @@ $map-flex: (
   "flex-direction": $map-flex-direction,
   "flex-wrap": $map-flex-wrap,
 );
+
+/// Maps - Grids
+$map-justify-items: (
+  "normal": $justify-items-normal,
+  "stetch": $justify-items-stetch,
+  "center": $justify-items-center,
+  "start": $justify-items-start,
+  "end": $justify-items-end,
+  "flex-start": $justify-items-flex-start,
+  "flex-end": $justify-items-flex-end,
+  "left": $justify-items-left,
+  "right": $justify-items-right,
+);
+
+$map-grid: (
+  "align-item": $map-align-item,
+  "justify-items": $map-justify-items,
+);

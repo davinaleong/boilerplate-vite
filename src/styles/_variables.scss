@@ -471,5 +471,12 @@ $flex-wrap-wrap: wrap;
 
 /// Variables - Grid
 /// Grid - Justify Items
-
-/// Grid - Gaps
+$justify-items-normal: normal;
+$justify-items-stretch: stretch;
+$justify-items-center: center;
+$justify-items-start: start;
+$justify-items-end: end;
+$justify-items-flex-start: flex-start;
+$justify-items-flex-end: flex-end;
+$justify-items-left: left;
+$justify-items-right: right;
