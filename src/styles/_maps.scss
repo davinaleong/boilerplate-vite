@@ -1,0 +1,335 @@
+/// Maps
+
+/// Maps - Colours
+$map-slate: (
+  "0": $clr-slate-0,
+  "100": $clr-slate-100,
+  "200": $clr-slate-200,
+  "300": $clr-slate-300,
+  "400": $clr-slate-400,
+  "500": $clr-slate-500,
+  "600": $clr-slate-600,
+  "700": $clr-slate-700,
+  "800": $clr-slate-800,
+  "900": $clr-slate-900,
+  "1000": $clr-slate-1000,
+);
+
+$map-gray: (
+  "0": $clr-gray-0,
+  "100": $clr-gray-100,
+  "200": $clr-gray-200,
+  "300": $clr-gray-300,
+  "400": $clr-gray-400,
+  "500": $clr-gray-500,
+  "600": $clr-gray-600,
+  "700": $clr-gray-700,
+  "800": $clr-gray-800,
+  "900": $clr-gray-900,
+  "1000": $clr-gray-1000,
+);
+
+$map-zinc: (
+  "0": $clr-zinc-0,
+  "100": $clr-zinc-100,
+  "200": $clr-zinc-200,
+  "300": $clr-zinc-300,
+  "400": $clr-zinc-400,
+  "500": $clr-zinc-500,
+  "600": $clr-zinc-600,
+  "700": $clr-zinc-700,
+  "800": $clr-zinc-800,
+  "900": $clr-zinc-900,
+  "1000": $clr-zinc-1000,
+);
+
+$map-neutral: (
+  "0": $clr-neutral-0,
+  "100": $clr-neutral-100,
+  "200": $clr-neutral-200,
+  "300": $clr-neutral-300,
+  "400": $clr-neutral-400,
+  "500": $clr-neutral-500,
+  "600": $clr-neutral-600,
+  "700": $clr-neutral-700,
+  "800": $clr-neutral-800,
+  "900": $clr-neutral-900,
+  "1000": $clr-neutral-1000,
+);
+
+$map-stone: (
+  "0": $clr-stone-0,
+  "100": $clr-stone-100,
+  "200": $clr-stone-200,
+  "300": $clr-stone-300,
+  "400": $clr-stone-400,
+  "500": $clr-stone-500,
+  "600": $clr-stone-600,
+  "700": $clr-stone-700,
+  "800": $clr-stone-800,
+  "900": $clr-stone-900,
+  "1000": $clr-stone-1000,
+);
+
+$map-red: (
+  "0": $clr-red-0,
+  "100": $clr-red-100,
+  "200": $clr-red-200,
+  "300": $clr-red-300,
+  "400": $clr-red-400,
+  "500": $clr-red-500,
+  "600": $clr-red-600,
+  "700": $clr-red-700,
+  "800": $clr-red-800,
+  "900": $clr-red-900,
+  "1000": $clr-red-1000,
+);
+
+$map-orange: (
+  "0": $clr-orange-0,
+  "100": $clr-orange-100,
+  "200": $clr-orange-200,
+  "300": $clr-orange-300,
+  "400": $clr-orange-400,
+  "500": $clr-orange-500,
+  "600": $clr-orange-600,
+  "700": $clr-orange-700,
+  "800": $clr-orange-800,
+  "900": $clr-orange-900,
+  "1000": $clr-orange-1000,
+);
+
+$map-amber: (
+  "0": $clr-amber-0,
+  "100": $clr-amber-100,
+  "200": $clr-amber-200,
+  "300": $clr-amber-300,
+  "400": $clr-amber-400,
+  "500": $clr-amber-500,
+  "600": $clr-amber-600,
+  "700": $clr-amber-700,
+  "800": $clr-amber-800,
+  "900": $clr-amber-900,
+  "1000": $clr-amber-1000,
+);
+
+$map-yellow: (
+  "0": $clr-yellow-0,
+  "100": $clr-yellow-100,
+  "200": $clr-yellow-200,
+  "300": $clr-yellow-300,
+  "400": $clr-yellow-400,
+  "500": $clr-yellow-500,
+  "600": $clr-yellow-600,
+  "700": $clr-yellow-700,
+  "800": $clr-yellow-800,
+  "900": $clr-yellow-900,
+  "1000": $clr-yellow-1000,
+);
+
+$map-lime: (
+  "0": $clr-lime-0,
+  "100": $clr-lime-100,
+  "200": $clr-lime-200,
+  "300": $clr-lime-300,
+  "400": $clr-lime-400,
+  "500": $clr-lime-500,
+  "600": $clr-lime-600,
+  "700": $clr-lime-700,
+  "800": $clr-lime-800,
+  "900": $clr-lime-900,
+  "1000": $clr-lime-1000,
+);
+
+$map-green: (
+  "0": $clr-green-0,
+  "100": $clr-green-100,
+  "200": $clr-green-200,
+  "300": $clr-green-300,
+  "400": $clr-green-400,
+  "500": $clr-green-500,
+  "600": $clr-green-600,
+  "700": $clr-green-700,
+  "800": $clr-green-800,
+  "900": $clr-green-900,
+  "1000": $clr-green-1000,
+);
+
+$map-emerald: (
+  "0": $clr-emerald-0,
+  "100": $clr-emerald-100,
+  "200": $clr-emerald-200,
+  "300": $clr-emerald-300,
+  "400": $clr-emerald-400,
+  "500": $clr-emerald-500,
+  "600": $clr-emerald-600,
+  "700": $clr-emerald-700,
+  "800": $clr-emerald-800,
+  "900": $clr-emerald-900,
+  "1000": $clr-emerald-1000,
+);
+
+$map-teal: (
+  "0": $clr-teal-0,
+  "100": $clr-teal-100,
+  "200": $clr-teal-200,
+  "300": $clr-teal-300,
+  "400": $clr-teal-400,
+  "500": $clr-teal-500,
+  "600": $clr-teal-600,
+  "700": $clr-teal-700,
+  "800": $clr-teal-800,
+  "900": $clr-teal-900,
+  "1000": $clr-teal-1000,
+);
+
+$map-cyan: (
+  "0": $clr-cyan-0,
+  "100": $clr-cyan-100,
+  "200": $clr-cyan-200,
+  "300": $clr-cyan-300,
+  "400": $clr-cyan-400,
+  "500": $clr-cyan-500,
+  "600": $clr-cyan-600,
+  "700": $clr-cyan-700,
+  "800": $clr-cyan-800,
+  "900": $clr-cyan-900,
+  "1000": $clr-cyan-1000,
+);
+
+$map-sky: (
+  "0": $clr-sky-0,
+  "100": $clr-sky-100,
+  "200": $clr-sky-200,
+  "300": $clr-sky-300,
+  "400": $clr-sky-400,
+  "500": $clr-sky-500,
+  "600": $clr-sky-600,
+  "700": $clr-sky-700,
+  "800": $clr-sky-800,
+  "900": $clr-sky-900,
+  "1000": $clr-sky-1000,
+);
+
+$map-blue: (
+  "0": $clr-blue-0,
+  "100": $clr-blue-100,
+  "200": $clr-blue-200,
+  "300": $clr-blue-300,
+  "400": $clr-blue-400,
+  "500": $clr-blue-500,
+  "600": $clr-blue-600,
+  "700": $clr-blue-700,
+  "800": $clr-blue-800,
+  "900": $clr-blue-900,
+  "1000": $clr-blue-1000,
+);
+
+$map-indigo: (
+  "0": $clr-indigo-0,
+  "100": $clr-indigo-100,
+  "200": $clr-indigo-200,
+  "300": $clr-indigo-300,
+  "400": $clr-indigo-400,
+  "500": $clr-indigo-500,
+  "600": $clr-indigo-600,
+  "700": $clr-indigo-700,
+  "800": $clr-indigo-800,
+  "900": $clr-indigo-900,
+  "1000": $clr-indigo-1000,
+);
+
+$map-violet: (
+  "0": $clr-violet-0,
+  "100": $clr-violet-100,
+  "200": $clr-violet-200,
+  "300": $clr-violet-300,
+  "400": $clr-violet-400,
+  "500": $clr-violet-500,
+  "600": $clr-violet-600,
+  "700": $clr-violet-700,
+  "800": $clr-violet-800,
+  "900": $clr-violet-900,
+  "1000": $clr-violet-1000,
+);
+
+$map-purple: (
+  "0": $clr-purple-0,
+  "100": $clr-purple-100,
+  "200": $clr-purple-200,
+  "300": $clr-purple-300,
+  "400": $clr-purple-400,
+  "500": $clr-purple-500,
+  "600": $clr-purple-600,
+  "700": $clr-purple-700,
+  "800": $clr-purple-800,
+  "900": $clr-purple-900,
+  "1000": $clr-purple-1000,
+);
+
+$map-fuchsia: (
+  "0": $clr-fuchsia-0,
+  "100": $clr-fuchsia-100,
+  "200": $clr-fuchsia-200,
+  "300": $clr-fuchsia-300,
+  "400": $clr-fuchsia-400,
+  "500": $clr-fuchsia-500,
+  "600": $clr-fuchsia-600,
+  "700": $clr-fuchsia-700,
+  "800": $clr-fuchsia-800,
+  "900": $clr-fuchsia-900,
+  "1000": $clr-fuchsia-1000,
+);
+
+$map-pink: (
+  "0": $clr-pink-0,
+  "100": $clr-pink-100,
+  "200": $clr-pink-200,
+  "300": $clr-pink-300,
+  "400": $clr-pink-400,
+  "500": $clr-pink-500,
+  "600": $clr-pink-600,
+  "700": $clr-pink-700,
+  "800": $clr-pink-800,
+  "900": $clr-pink-900,
+  "1000": $clr-pink-1000,
+);
+
+$map-rose: (
+  "0": $clr-rose-0,
+  "100": $clr-rose-100,
+  "200": $clr-rose-200,
+  "300": $clr-rose-300,
+  "400": $clr-rose-400,
+  "500": $clr-rose-500,
+  "600": $clr-rose-600,
+  "700": $clr-rose-700,
+  "800": $clr-rose-800,
+  "900": $clr-rose-900,
+  "1000": $clr-rose-1000,
+);
+
+$map-colours: (
+  "slate": $map-slate,
+  "gray": $map-gray,
+  "zinc": $map-zinc,
+  "neutral": $map-neutral,
+  "stone": $map-stone,
+  "red": $map-red,
+  "orange": $map-orange,
+  "amber": $map-amber,
+  "yellow": $map-yellow,
+  "lime": $map-lime,
+  "green": $map-green,
+  "emerald": $map-emerald,
+  "teal": $map-teal,
+  "cyan": $map-cyan,
+  "sky": $map-sky,
+  "blue": $map-blue,
+  "indigo": $map-indigo,
+  "violet": $map-violet,
+  "purple": $map-purple,
+  "fuchsia": $map-fuchsia,
+  "pink": $map-pink,
+  "rose": $map-rose,
+);
