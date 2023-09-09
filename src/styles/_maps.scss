@@ -379,3 +379,66 @@ $map-font: (
   "font-style": $map-font-style,
   "font-size": $map-font-size,
 );
+
+/// Maps - Spacers
+/// Spacers - Fixed
+$map-spacer-fixed: (
+  "auto": $spacer-fixed-auto,
+  "0": $spacer-fixed-0,
+  "100": $spacer-fixed-100,
+  "200": $spacer-fixed-200,
+  "300": $spacer-fixed-300,
+  "400": $spacer-fixed-400,
+  "500": $spacer-fixed-500,
+  "600": $spacer-fixed-600,
+  "700": $spacer-fixed-700,
+  "800": $spacer-fixed-800,
+  "900": $spacer-fixed-900,
+  "1000": $spacer-fixed-1000,
+);
+
+$map-spacer-fixed-one-up: (
+  "100-200": $spacer-fixed-one-up-100-200,
+  "200-300": $spacer-fixed-one-up-200-300,
+  "300-400": $spacer-fixed-one-up-300-400,
+  "400-500": $spacer-fixed-one-up-400-500,
+  "500-600": $spacer-fixed-one-up-500-600,
+  "600-700": $spacer-fixed-one-up-600-700,
+  "700-800": $spacer-fixed-one-up-700-800,
+  "800-900": $spacer-fixed-one-up-800-900,
+  "900-1000": $spacer-fixed-one-up-900-1000,
+);
+
+$map-spacer-variable: (
+  "auto": $spacer-variable-auto,
+  "0": $spacer-variable-0,
+  "100": $spacer-variable-100,
+  "200": $spacer-variable-200,
+  "300": $spacer-variable-300,
+  "400": $spacer-variable-400,
+  "500": $spacer-variable-500,
+  "600": $spacer-variable-600,
+  "700": $spacer-variable-700,
+  "800": $spacer-variable-800,
+  "900": $spacer-variable-900,
+  "1000": $spacer-variable-1000,
+);
+
+$map-spacer-variable-one-up: (
+  "100-200": $spacer-variable-one-up-100-200,
+  "200-300": $spacer-variable-one-up-200-300,
+  "300-400": $spacer-variable-one-up-300-400,
+  "400-500": $spacer-variable-one-up-400-500,
+  "500-600": $spacer-variable-one-up-500-600,
+  "600-700": $spacer-variable-one-up-600-700,
+  "700-800": $spacer-variable-one-up-700-800,
+  "800-900": $spacer-variable-one-up-800-900,
+  "900-1000": $spacer-variable-one-up-900-1000,
+);
+
+$map-spacer: (
+  "fixed": $map-spacer-fixed,
+  "fixed-one-up": $map-spacer-fixed-one-up,
+  "variable": $map-spacer-variable,
+  "variable-one-up": $map-spacer-variable-one-up,
+);
