@@ -372,3 +372,24 @@ $spacer-variable-one-up-600-700: clamp(1.69em, calc(1.4em + 1.41vw), 2.5em);
 $spacer-variable-one-up-700-800: clamp(2.25em, calc(1.73em + 2.61vw), 3.75em);
 $spacer-variable-one-up-800-900: clamp(3.38em, calc(2.81em + 2.83vw), 5em);
 $spacer-variable-one-up-900-1000: clamp(4.5em, calc(3.46em + 5.22vw), 7.5em);
+
+/// Variables - Text
+/// Text - Transforms
+$text-transform-none: none;
+$text-transform-capitalize: capitalize;
+$text-transform-uppercase: uppercase;
+$text-transform-lowercase: lowercase;
+
+/// Text - Decorations
+$text-decoration-none: none;
+$text-decoration-underline: underline;
+$text-decoration-overline: overline;
+$text-decoration-line-through: line-through;
+
+/// Text - Aligns
+$text-align-left: left;
+$text-align-center: center;
+$text-align-right: right;
+$text-align-justify: justify;
+$text-align-start: start;
+$text-align-end: end;

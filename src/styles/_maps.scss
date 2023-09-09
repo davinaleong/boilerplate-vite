@@ -442,3 +442,33 @@ $map-spacer: (
   "variable": $map-spacer-variable,
   "variable-one-up": $map-spacer-variable-one-up,
 );
+
+/// Maps - Text
+$map-text-transform: (
+  "none": $text-transform-none,
+  "capitalize": $text-transform-capitalize,
+  "uppercase": $text-transform-none,
+  "lowercase": $text-transform-lowercase,
+);
+
+$map-text-decoration: (
+  "none": $text-decoration-none,
+  "underline": $text-decoration-underline,
+  "overline": $text-decoration-overline,
+  "line-through": $text-decoration-line-through,
+);
+
+$map-text-align: (
+  "left": $text-align-left,
+  "center": $text-align-center,
+  "right": $text-align-right,
+  "justify": $text-align-justify,
+  "start": $text-align-start,
+  "end": $text-align-end,
+);
+
+$map-text: (
+  "text-transform": $map-text-transform,
+  "text-decoration": $map-text-decoration,
+  "text-align": $map-text-align,
+);
