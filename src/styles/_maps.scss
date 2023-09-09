@@ -521,3 +521,48 @@ $map-layer: (
   "6": $layer-6,
   "7": $layer-7,
 );
+
+/// Maps - Flex
+$map-align-item: (
+  "normal": $align-items-normal,
+  "stretch": $align-items-stretch,
+  "center": $align-items-center,
+  "start": $align-items-start,
+  "end": $align-items-end,
+  "flex-start": $align-items-flex-start,
+  "flex-end": $align-items-flex-end,
+);
+
+$map-justify-content: (
+  "center": $justify-content-center,
+  "start": $justify-content-start,
+  "end": $justify-content-end,
+  "flex-start": $justify-content-flex-start,
+  "flex-end": $justify-content-flex-end,
+  "left": $justify-content-left,
+  "right": $justify-content-right,
+  "normal": $justify-content-normal,
+  "space-between": $justify-content-space-between,
+  "space-around": $justify-content-space-around,
+  "space-evenly": $justify-content-space-evenly,
+  "stretch": $justify-content-stretch,
+);
+
+$map-flex-direction: (
+  "row": $flex-direction-row,
+  "row-reverse": $flex-direction-row-reverse,
+  "column": $flex-direction-column,
+  "column-reverse": $flex-direction-column-reverse,
+);
+
+$map-flex-wrap: (
+  "nowrap": $flex-wrap-nowrap,
+  "wrap": $flex-wrap-wrap,
+);
+
+$map-flex: (
+  "align-item": $map-align-item,
+  "justify-content": $map-justify-content,
+  "flex-direction": $map-flex-direction,
+  "flex-wrap": $map-flex-wrap,
+);

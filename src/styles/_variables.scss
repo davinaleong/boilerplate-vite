@@ -437,12 +437,37 @@ $layer-7: 7;
 
 /// Variables - Flex
 /// Flex - Align Items
+$align-items-normal: normal;
+$align-items-stretch: stretch;
+$align-items-center: center;
+$align-items-start: start;
+$align-items-end: end;
+$align-items-flex-start: flex-start;
+$align-items-flex-end: flex-end;
 
 /// Flex - Justify Content
+$justify-content-center: center;
+$justify-content-start: start;
+$justify-content-end: end;
+$justify-content-flex-start: flex-start;
+$justify-content-flex-end: flex-end;
+$justify-content-left: left;
+$justify-content-right: right;
+$justify-content-normal: normal;
+$justify-content-space-between: space-between;
+$justify-content-space-around: space-around;
+$justify-content-space-evenly: space-evenly;
+$justify-content-stretch: stretch;
 
 /// Flex - Flex Direction
+$flex-direction-row: row;
+$flex-direction-row-reverse: row-reverse;
+$flex-direction-column: column;
+$flex-direction-column-reverse: column-reverse;
 
 /// Flex - Flex Wrap
+$flex-wrap-nowrap: nowrap;
+$flex-wrap-wrap: wrap;
 
 /// Variables - Grid
 /// Grid - Justify Items
