@@ -472,3 +472,22 @@ $map-text: (
   "text-decoration": $map-text-decoration,
   "text-align": $map-text-align,
 );
+
+/// Maps - Breakpoints
+$map-breakpoint: (
+  "0": $breakpoint-0,
+  "sm": $breakpoint-sm,
+  "md": $breakpoint-md,
+  "lg": $breakpoint-lg,
+  "xl": $breakpoint-xl,
+  "2xl": $breakpoint-2xl,
+);
+
+/// Maps - Positions
+$map-position: (
+  "static": $position-static,
+  "relative": $position-relative,
+  "absolute": $position-absolute,
+  "fixed": $position-fixed,
+  "sticky": $position-sticky,
+);

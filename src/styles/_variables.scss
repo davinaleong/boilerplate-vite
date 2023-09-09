@@ -393,3 +393,18 @@ $text-align-right: right;
 $text-align-justify: justify;
 $text-align-start: start;
 $text-align-end: end;
+
+/// Variables - Breakpoints
+$breakpoint-0: 0;
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+$breakpoint-2xl: 1536px;
+
+/// Variables - Positions
+$position-static: static;
+$position-relative: relative;
+$position-absolute: absolute;
+$position-fixed: fixed;
+$position-sticky: sticky;
