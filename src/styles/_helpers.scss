@@ -1,0 +1,48 @@
+/// Helpers
+
+/// Helpers - Colours
+@each $key, $value in $map-colour {
+  @each $sKey, $sValue in $value {
+    $cKey: #{$key}-#{$sKey};
+
+    .text-#{$cKey} {
+      color: var(--clr-#{$cKey});
+    }
+
+    .bg-#{$cKey} {
+      background-color: var(--clr-#{$cKey});
+    }
+
+    .fill-#{$cKey} {
+      fill: var(--clr-#{$cKey});
+    }
+  }
+}
+
+/// Helpers - Font Families
+@each $key, $value in $map-font-family {
+  .ff-#{$key} {
+    font-family: var(--ff-#{$key});
+  }
+}
+
+/// Helpers - Font Weights
+@each $key, $value in $map-font-weight {
+  .fw-#{$key} {
+    font-weight: var(--fw-#{$key});
+  }
+}
+
+/// Helpers - Font Styles
+@each $key, $value in $map-font-style {
+  .fs-#{$key} {
+    font-style: var(--fs-#{$key});
+  }
+}
+
+/// Helpers - Font Sizes
+@each $key, $value in $map-font-size {
+  .fz-#{$key} {
+    font-size: var(--fz-#{$key});
+  }
+}

@@ -120,12 +120,6 @@ a {
   }
 }
 
-@for $i from 1 through 6 {
-  h#{$i} {
-    font-family: var(--ff-serif);
-  }
-}
-
 .wrapper {
   --_width: var(--wrapper-width);
 
