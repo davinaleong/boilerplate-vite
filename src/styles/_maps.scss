@@ -709,3 +709,15 @@ $map-box-shadow: (
   "variable-width": $map-box-shadow-variable-width,
   "direction": $map-box-shadow-direction,
 );
+
+/// Maps - Border Radiuses
+$map-border-radius-direction: (
+  "top-left": $border-radius-direction-top-left,
+  "top-right": $border-radius-direction-top-right,
+  "bottom-left": $border-radius-direction-bottom-left,
+  "bottom-right": $border-radius-direction-bottom-right,
+);
+
+$map-border-radius: (
+  "direction": $map-border-radius-direction,
+);
