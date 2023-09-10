@@ -480,3 +480,70 @@ $justify-items-flex-start: flex-start;
 $justify-items-flex-end: flex-end;
 $justify-items-left: left;
 $justify-items-right: right;
+
+/// Variables - Borders
+/// Borders - Widths
+$border-width-0: 0;
+$border-width-100: 1px;
+$border-width-200: 2px;
+$border-width-300: 3px;
+$border-width-400: 6px;
+$border-width-500: 0.1rem;
+$border-width-600: 0.1em;
+$border-width-700: 0.5rem;
+$border-width-800: 0.5em;
+$border-width-900: 1rem;
+$border-width-1000: 1em;
+
+/// Borders - Styles
+$border-style-none: none;
+$border-style-hidden: hidden;
+$border-style-dotted: dotted;
+$border-style-dashed: dashed;
+$border-style-solid: solid;
+$border-style-double: double;
+$border-style-groove: groove;
+$border-style-ridge: ridge;
+$border-style-inset: inset;
+$border-style-outset: outset;
+
+/// Variables - Outlines
+/// Outlines - Widths
+$outline-width-0: 0;
+$outline-width-100: 1px;
+$outline-width-200: 2px;
+$outline-width-300: 3px;
+$outline-width-400: 6px;
+$outline-width-500: 0.1rem;
+$outline-width-600: 0.1em;
+$outline-width-700: 0.5rem;
+$outline-width-800: 0.5em;
+$outline-width-900: 1rem;
+$outline-width-1000: 1em;
+
+/// Outlines - Styles
+$outline-style-auto: auto;
+$outline-style-none: none;
+$outline-style-dotted: dotted;
+$outline-style-dashed: dashed;
+$outline-style-solid: solid;
+$outline-style-double: double;
+$outline-style-groove: groove;
+$outline-style-ridge: ridge;
+$outline-style-inset: inset;
+$outline-style-outset: outset;
+
+/// Variables - Directions
+$direction-all: "";
+$direction-block: "block";
+$direction-block-start: "block-start";
+$direction-block-end: "block-end";
+$direction-inline: "inline";
+$direction-inline-start: "inline-start";
+$direction-inline-end: "inline-end";
+$direction-y: "y";
+$direction-top: "top";
+$direction-bottom: "bottom";
+$direction-x: "x";
+$direction-left: "left";
+$direction-right: "right";

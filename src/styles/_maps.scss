@@ -584,3 +584,86 @@ $map-grid: (
   "align-item": $map-align-item,
   "justify-items": $map-justify-items,
 );
+
+/// Maps - Borders
+$map-border-width: (
+  "0": $border-width-0,
+  "100": $border-width-100,
+  "200": $border-width-200,
+  "300": $border-width-300,
+  "400": $border-width-400,
+  "500": $border-width-500,
+  "600": $border-width-600,
+  "700": $border-width-700,
+  "800": $border-width-800,
+  "900": $border-width-900,
+  "1000": $border-width-1000,
+);
+
+$map-border-style: (
+  "none": $border-style-none,
+  "hidden": $border-style-hidden,
+  "dotted": $border-style-dotted,
+  "dashed": $border-style-dashed,
+  "solid": $border-style-solid,
+  "double": $border-style-double,
+  "groove": $border-style-groove,
+  "ridge": $border-style-ridge,
+  "inset": $border-style-inset,
+  "outset": $border-style-outset,
+);
+
+$map-border: (
+  "border-width": $map-border-width,
+  "border-style": $map-border-style,
+);
+
+/// Maps - Outline
+$map-outline-width: (
+  "0": $outline-width-0,
+  "100": $outline-width-100,
+  "200": $outline-width-200,
+  "300": $outline-width-300,
+  "400": $outline-width-400,
+  "500": $outline-width-500,
+  "600": $outline-width-600,
+  "700": $outline-width-700,
+  "800": $outline-width-800,
+  "900": $outline-width-900,
+  "1000": $outline-width-1000,
+);
+
+$map-outline-style: (
+  "none": $outline-style-none,
+  "hidden": $outline-style-hidden,
+  "dotted": $outline-style-dotted,
+  "dashed": $outline-style-dashed,
+  "solid": $outline-style-solid,
+  "double": $outline-style-double,
+  "groove": $outline-style-groove,
+  "ridge": $outline-style-ridge,
+  "inset": $outline-style-inset,
+  "outset": $outline-style-outset,
+);
+
+$map-outline: (
+  "outline-width": $map-outline-width,
+  "outline-style": $map-outline-style,
+);
+
+/// Map - Directions
+$map-direction: (
+  "all": $direction-all,
+  "block": $direction-block,
+  "block": $direction-block,
+  "block": $direction-block,
+  "inline": $direction-inline,
+  "inline": $direction-inline,
+  "inline": $direction-inline,
+  "y": $direction-y,
+  "top": $direction-top,
+  "bottom": $direction-bottom,
+  "x": $direction-x,
+  "left": $direction-left,
+  "right": $direction-right,
+);
