@@ -59,6 +59,10 @@ body {
   font-size: var(--fz-400);
 }
 
+:focus {
+  outline: 3px solid var(--clr-orange-500);
+}
+
 p {
   line-height: 1.5;
 }
@@ -87,6 +91,12 @@ sup {
 
 sub {
   vertical-align: bottom;
+}
+
+mark {
+  --_bg-clr: var(--clr-yellow-100);
+
+  background-color: var(--_bg-clr);
 }
 
 a {
@@ -127,4 +137,16 @@ a {
 
   container-name: var(--_name);
   container-type: inline-size;
+}
+
+.flow {
+  --_spacer: var(--v-400);
+
+  & > * + * {
+    margin-top: var(--_spacer);
+  }
+}
+
+.clickable {
+  cursor: pointer;
 }

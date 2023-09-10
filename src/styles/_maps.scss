@@ -570,7 +570,7 @@ $map-flex: (
 /// Maps - Grids
 $map-justify-items: (
   "normal": $justify-items-normal,
-  "stetch": $justify-items-stetch,
+  "stretch": $justify-items-stretch,
   "center": $justify-items-center,
   "start": $justify-items-start,
   "end": $justify-items-end,
@@ -635,7 +635,6 @@ $map-outline-width: (
 
 $map-outline-style: (
   "none": $outline-style-none,
-  "hidden": $outline-style-hidden,
   "dotted": $outline-style-dotted,
   "dashed": $outline-style-dashed,
   "solid": $outline-style-solid,
@@ -655,11 +654,11 @@ $map-outline: (
 $map-direction: (
   "all": $direction-all,
   "block": $direction-block,
-  "block": $direction-block,
-  "block": $direction-block,
+  "block-start": $direction-block-start,
+  "block-end": $direction-block-end,
   "inline": $direction-inline,
-  "inline": $direction-inline,
-  "inline": $direction-inline,
+  "inline-start": $direction-inline-start,
+  "inline-end": $direction-inline-end,
   "y": $direction-y,
   "top": $direction-top,
   "bottom": $direction-bottom,
