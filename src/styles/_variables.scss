@@ -547,3 +547,36 @@ $direction-bottom: "bottom";
 $direction-x: "x";
 $direction-left: "left";
 $direction-right: "right";
+
+/// Variables - Box Shadows
+/// Box Shadows - Fixed Widths
+$box-shadow-fixed-width-0: 0rem;
+$box-shadow-fixed-width-100: 0.01rem;
+$box-shadow-fixed-width-200: 0.03rem;
+$box-shadow-fixed-width-300: 0.05rem;
+$box-shadow-fixed-width-400: 0.1rem;
+$box-shadow-fixed-width-500: 0.15rem;
+$box-shadow-fixed-width-600: 0.2rem;
+$box-shadow-fixed-width-700: 0.25rem;
+$box-shadow-fixed-width-800: 0.5rem;
+$box-shadow-fixed-width-900: 0.75rem;
+$box-shadow-fixed-width-1000: 1rem;
+
+/// Box Shadows - Variable Widths
+$box-shadow-variable-width-0: 0rem;
+$box-shadow-variable-width-100: 0.01rem;
+$box-shadow-variable-width-200: 0.03rem;
+$box-shadow-variable-width-300: 0.05rem;
+$box-shadow-variable-width-400: 0.1rem;
+$box-shadow-variable-width-500: 0.15rem;
+$box-shadow-variable-width-600: 0.2rem;
+$box-shadow-variable-width-700: 0.25rem;
+$box-shadow-variable-width-800: 0.5rem;
+$box-shadow-variable-width-900: 0.75rem;
+$box-shadow-variable-width-1000: 1rem;
+
+/// Box Shadows - Directions
+$box-shadow-direction-top: $direction-top;
+$box-shadow-direction-right: $direction-right;
+$box-shadow-direction-bottom: $direction-bottom;
+$box-shadow-direction-left: $direction-left;

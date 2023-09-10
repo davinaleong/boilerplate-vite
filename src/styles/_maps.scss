@@ -651,7 +651,7 @@ $map-outline: (
   "outline-style": $map-outline-style,
 );
 
-/// Map - Directions
+/// Maps - Directions
 $map-direction: (
   "all": $direction-all,
   "block": $direction-block,
@@ -666,4 +666,46 @@ $map-direction: (
   "x": $direction-x,
   "left": $direction-left,
   "right": $direction-right,
+);
+
+/// Maps - Box Shadows
+$map-box-shadow-fixed-width: (
+  "0": $box-shadow-fixed-width-0,
+  "100": $box-shadow-fixed-width-100,
+  "200": $box-shadow-fixed-width-200,
+  "300": $box-shadow-fixed-width-300,
+  "400": $box-shadow-fixed-width-400,
+  "500": $box-shadow-fixed-width-500,
+  "600": $box-shadow-fixed-width-600,
+  "700": $box-shadow-fixed-width-700,
+  "800": $box-shadow-fixed-width-800,
+  "900": $box-shadow-fixed-width-900,
+  "1000": $box-shadow-fixed-width-1000,
+);
+
+$map-box-shadow-variable-width: (
+  "0": $box-shadow-variable-width-0,
+  "100": $box-shadow-variable-width-100,
+  "200": $box-shadow-variable-width-200,
+  "300": $box-shadow-variable-width-300,
+  "400": $box-shadow-variable-width-400,
+  "500": $box-shadow-variable-width-500,
+  "600": $box-shadow-variable-width-600,
+  "700": $box-shadow-variable-width-700,
+  "800": $box-shadow-variable-width-800,
+  "900": $box-shadow-variable-width-900,
+  "1000": $box-shadow-variable-width-1000,
+);
+
+$map-box-shadow-direction: (
+  "top": $box-shadow-direction-top,
+  "right": $box-shadow-direction-right,
+  "bottom": $box-shadow-direction-bottom,
+  "left": $box-shadow-direction-left,
+);
+
+$map-box-shadow: (
+  "fixed-width": $map-box-shadow-fixed-width,
+  "variable-width": $map-box-shadow-variable-width,
+  "direction": $map-box-shadow-direction,
 );
