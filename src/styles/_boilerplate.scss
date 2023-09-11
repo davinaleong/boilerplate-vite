@@ -10,11 +10,27 @@
 
 table {
   --_border: thin solid var(--clr-gray-300);
-  --_spacer-block: var(--v-200);
-  --_spacer-inline: var(--v-300);
+  --_spacer-block: var(--v-300);
+  --_spacer-inline: var(--v-400);
 
   text-align: left;
   width: 100%;
+
+  thead > tr:last-child {
+    border-bottom: var(--_border);
+  }
+
+  tbody > tr {
+    border-bottom: var(--_border);
+  }
+
+  tfoot > tr:first-child {
+    border-top: var(--_border);
+  }
+
+  tfoot > tr:last-child {
+    border-bottom: var(--_border);
+  }
 
   caption,
   th,
@@ -28,6 +44,7 @@ table {
   caption {
     text-align: left;
     text-transform: uppercase;
+    letter-spacing: 0.5rem;
     padding-block-start: var(--_spacer-block);
     padding-block-end: var(--_spacer-block);
     padding-inline-start: var(--_spacer-inline);
