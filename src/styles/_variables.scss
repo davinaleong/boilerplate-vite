@@ -581,9 +581,28 @@ $box-shadow-direction-right: $direction-right;
 $box-shadow-direction-bottom: $direction-bottom;
 $box-shadow-direction-left: $direction-left;
 
-/// Variables - Border Radius
+/// Variables - Border Radiuses
 /// Border Radius - Directions
 $border-radius-direction-top-left: "top-left";
 $border-radius-direction-top-right: "top-right";
 $border-radius-direction-bottom-left: "bottom-left";
 $border-radius-direction-bottom-right: "bottom-right";
+
+/// Variables - Object Fits
+$object-fit-contain: contain;
+$object-fit-cover: cover;
+$object-fit-fill: fill;
+$object-fit-none: none;
+$object-fit-scale-down: scale-down;
+
+/// Variables - Aspect Ratio
+$aspect-ratio-auto: auto;
+$aspect-ratio-1-1: 1/1;
+$aspect-ration-4-3: 4/3;
+$aspect-ratio-16-9: 16/9;
+$aspect-ratio-16-10: 16/10;
+$aspect-ratio-21-9: 21/9;
+$aspect-ratio-3-4: 3/4;
+$aspect-ratio-9-16: 9/16;
+$aspect-ratio-10-16: 10/16;
+$aspect-ratio-9-21: 9/21;
