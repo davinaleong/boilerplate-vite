@@ -7,3 +7,41 @@
   align-items: end;
   gap: var(--_spacer);
 }
+
+table {
+  --_border: thin solid var(--clr-gray-300);
+  --_spacer-block: var(--v-200);
+  --_spacer-inline: var(--v-300);
+
+  text-align: left;
+  width: 100%;
+
+  caption,
+  th,
+  td {
+    padding-block-start: var(--_spacer-block);
+    padding-block-end: var(--_spacer-block);
+    padding-inline-start: var(--_spacer-inline);
+    padding-inline-end: var(--_spacer-inline);
+  }
+
+  caption {
+    text-align: left;
+    text-transform: uppercase;
+    padding-block-start: var(--_spacer-block);
+    padding-block-end: var(--_spacer-block);
+    padding-inline-start: var(--_spacer-inline);
+    padding-inline-end: var(--_spacer-inline);
+    font-family: var(--ff-serif);
+    font-weight: var(--fw-bold);
+  }
+
+  th {
+    text-align: left;
+    font-weight: var(--fw-bold);
+  }
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
