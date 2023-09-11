@@ -485,6 +485,31 @@
   }
 }
 
+/// Utilities - Gaps
+@each $key, $value in $map-spacer-fixed {
+  .g-f-#{$key} {
+    gap: var(--f-#{$key});
+  }
+}
+
+@each $key, $value in $map-spacer-fixed-one-up {
+  .g-f-o-#{$key} {
+    gap: var(--f-o-#{$key});
+  }
+}
+
+@each $key, $value in $map-spacer-variable {
+  .g-v-#{$key} {
+    gap: var(--v-#{$key});
+  }
+}
+
+@each $key, $value in $map-spacer-variable-one-up {
+  .g-v-o-#{$key} {
+    gap: var(--v-o-#{$key});
+  }
+}
+
 /// Utilities - Borders
 @each $key, $value in $map-colour {
   @each $sKey, $sValue in $value {
