@@ -523,7 +523,7 @@ $map-layer: (
 );
 
 /// Maps - Flex
-$map-align-item: (
+$map-align-items: (
   "normal": $align-items-normal,
   "stretch": $align-items-stretch,
   "center": $align-items-center,
@@ -561,7 +561,7 @@ $map-flex-wrap: (
 );
 
 $map-flex: (
-  "align-item": $map-align-item,
+  "align-items": $map-align-items,
   "justify-content": $map-justify-content,
   "flex-direction": $map-flex-direction,
   "flex-wrap": $map-flex-wrap,
@@ -581,7 +581,7 @@ $map-justify-items: (
 );
 
 $map-grid: (
-  "align-item": $map-align-item,
+  "align-items": $map-align-items,
   "justify-items": $map-justify-items,
 );
 
