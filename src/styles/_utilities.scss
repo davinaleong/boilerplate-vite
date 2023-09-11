@@ -146,28 +146,28 @@
     }
 
     @each $sKey, $sValue in $map-spacer-variable {
-      $vKey: --f-#{$sKey};
+      $vKey: --v-#{$sKey};
       $cKey: #{$dKey}-#{$sKey};
-      .m-f-#{$cKey} {
+      .m-v-#{$cKey} {
         margin-block-start: var(#{$vKey});
         margin-block-end: var(#{$vKey});
       }
 
-      .p-f-#{$cKey} {
+      .p-v-#{$cKey} {
         padding-block-start: var(#{$vKey});
         padding-block-end: var(#{$vKey});
       }
     }
 
     @each $sKey, $sValue in $map-spacer-variable-one-up {
-      $vKey: --f-#{$sKey};
+      $vKey: --v-#{$sKey};
       $cKey: #{$dKey}-#{$sKey};
-      .m-f-o-#{$cKey} {
+      .m-v-o-#{$cKey} {
         margin-block-start: var(#{$vKey});
         margin-block-end: var(#{$vKey});
       }
 
-      .p-f-o-#{$cKey} {
+      .p-v-o-#{$cKey} {
         padding-block-start: var(#{$vKey});
         padding-block-end: var(#{$vKey});
       }
