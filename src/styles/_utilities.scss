@@ -19,6 +19,20 @@
   }
 }
 
+@each $key, $value in $map-brand-colour {
+  .text-#{$key} {
+    color: var(--clr-brand-#{$key});
+  }
+
+  .bg-#{$key} {
+    background-color: var(--clr-brand-#{$key});
+  }
+
+  .fill-#{$key} {
+    fill: var(--clr-brand-#{$key});
+  }
+}
+
 /// Utilities - Font Families
 @each $key, $value in $map-font-family {
   .ff-#{$key} {

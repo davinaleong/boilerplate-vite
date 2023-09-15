@@ -6,6 +6,10 @@
     }
   }
 
+  @each $key, $value in $map-brand-colour {
+    --clr-brand-#{$key}: #{$value};
+  }
+
   /* Font Families */
   @each $key, $value in $map-font-family {
     --ff-#{$key}: #{$value};

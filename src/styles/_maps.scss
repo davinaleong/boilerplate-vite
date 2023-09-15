@@ -334,6 +334,19 @@ $map-colour: (
   "rose": $map-rose,
 );
 
+$map-brand-colour: (
+  "html": $colour-html,
+  "css": $colour-css,
+  "bootstrap": $colour-bootstrap,
+  "sass": $colour-sass,
+  "javascript": $colour-javascript,
+  "react": $colour-react,
+  "astro": $colour-astro,
+  "php": $colour-php,
+  "laravel": $colour-laravel,
+  "sql": $colour-sql,
+);
+
 /// Maps - Fonts
 $map-font-family: (
   "sans-serif": $font-family-sans-serif,
