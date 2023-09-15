@@ -5,12 +5,13 @@ console.log(`app.ts loaded.`)
 /// Functions
 function main() {
   logFunction(`main`)
+
   // Logic goes here
 }
 
-function logFunction(name: string, params?: Object): void {
+function logFunction(name: string, params: any = {}): void {
   console.log(`fn ${name}(${JSON.stringify(params)})`)
 }
 
-/// Execution
-main()
+/// Execute
+document.addEventListener(`DOMContentLoaded`, main)
