@@ -61,6 +61,7 @@
   }
 }
 
+/// Utilities - Spacers
 @each $dKey, $dValue in $map-direction {
   @if ($dKey == "all") {
     @each $sKey, $sValue in $map-spacer-fixed {
@@ -443,6 +444,34 @@
 @each $key, $value in $map-text-align {
   .ta-#{$key} {
     text-align: #{$value};
+  }
+}
+
+/// Fixed Line Heights
+@each $key, $value in $map-line-height-fixed {
+  .lh-f-#{$key} {
+    line-height: var(--lh-f-#{$key});
+  }
+}
+
+/// Variable Line Heights
+@each $key, $value in $map-line-height-variable {
+  .lh-v-#{$key} {
+    line-height: var(--lh-v-#{$key});
+  }
+}
+
+/// Fixed Letter Spacings
+@each $key, $value in $map-letter-spacing-fixed {
+  .ls-f-#{$key} {
+    letter-spacing: var(--ls-f-#{$key});
+  }
+}
+
+/// Variable Letter Spacings
+@each $key, $value in $map-letter-spacing-variable {
+  .ls-v-#{$key} {
+    letter-spacing: var(--ls-v-#{$key});
   }
 }
 

@@ -486,6 +486,78 @@ $map-text: (
   "text-align": $map-text-align,
 );
 
+/// Maps - Line Heights
+$map-line-height-fixed: (
+  "normal": $line-height-fixed-normal,
+  "0": $line-height-fixed-0,
+  "100": $line-height-fixed-100,
+  "200": $line-height-fixed-200,
+  "300": $line-height-fixed-300,
+  "400": $line-height-fixed-400,
+  "500": $line-height-fixed-500,
+  "600": $line-height-fixed-600,
+  "700": $line-height-fixed-700,
+  "800": $line-height-fixed-800,
+  "900": $line-height-fixed-900,
+  "1000": $line-height-fixed-1000,
+);
+
+$map-line-height-variable: (
+  "normal": $line-height-variable-normal,
+  "0": $line-height-variable-0,
+  "100": $line-height-variable-100,
+  "200": $line-height-variable-200,
+  "300": $line-height-variable-300,
+  "400": $line-height-variable-400,
+  "500": $line-height-variable-500,
+  "600": $line-height-variable-600,
+  "700": $line-height-variable-700,
+  "800": $line-height-variable-800,
+  "900": $line-height-variable-900,
+  "1000": $line-height-variable-1000,
+);
+
+$map-line-height: (
+  "fixed": $map-line-height-fixed,
+  "variable": $map-line-height-variable,
+);
+
+/// Maps - Letter Spacings
+$map-letter-spacing-fixed: (
+  "normal": $letter-spacing-fixed-normal,
+  "0": $letter-spacing-fixed-0,
+  "100": $letter-spacing-fixed-100,
+  "200": $letter-spacing-fixed-200,
+  "300": $letter-spacing-fixed-300,
+  "400": $letter-spacing-fixed-400,
+  "500": $letter-spacing-fixed-500,
+  "600": $letter-spacing-fixed-600,
+  "700": $letter-spacing-fixed-700,
+  "800": $letter-spacing-fixed-800,
+  "900": $letter-spacing-fixed-900,
+  "1000": $letter-spacing-fixed-1000,
+);
+
+$map-letter-spacing-variable: (
+  "normal": $letter-spacing-variable-normal,
+  "0": $letter-spacing-variable-0,
+  "100": $letter-spacing-variable-100,
+  "200": $letter-spacing-variable-200,
+  "300": $letter-spacing-variable-300,
+  "400": $letter-spacing-variable-400,
+  "500": $letter-spacing-variable-500,
+  "600": $letter-spacing-variable-600,
+  "700": $letter-spacing-variable-700,
+  "800": $letter-spacing-variable-800,
+  "900": $letter-spacing-variable-900,
+  "1000": $letter-spacing-variable-1000,
+);
+
+$map-letter-spacing: (
+  "fixed": $map-letter-spacing-fixed,
+  "variable": $map-letter-spacing-variable,
+);
+
 /// Maps - Breakpoints
 $map-breakpoint: (
   "0": $breakpoint-0,

@@ -406,6 +406,64 @@ $text-align-justify: justify;
 $text-align-start: start;
 $text-align-end: end;
 
+/// Variables - Line Heights
+/// Line Heights - Fixed
+$line-height-fixed-normal: normal;
+$line-height-fixed-0: 0;
+$line-height-fixed-100: 0.1rem;
+$line-height-fixed-200: 0.3rem;
+$line-height-fixed-300: 0.5rem;
+$line-height-fixed-400: 1rem;
+$line-height-fixed-500: 1.5rem;
+$line-height-fixed-600: 2rem;
+$line-height-fixed-700: 2.5rem;
+$line-height-fixed-800: 3rem;
+$line-height-fixed-900: 4rem;
+$line-height-fixed-1000: 6rem;
+
+/// Line Heights - Variable
+$line-height-variable-normal: normal;
+$line-height-variable-0: 0;
+$line-height-variable-100: 0.1em;
+$line-height-variable-200: 0.3em;
+$line-height-variable-300: 0.5em;
+$line-height-variable-400: 1em;
+$line-height-variable-500: 1.5em;
+$line-height-variable-600: 2em;
+$line-height-variable-700: 2.5em;
+$line-height-variable-800: 3em;
+$line-height-variable-900: 4em;
+$line-height-variable-1000: 6em;
+
+/// Variables - Letter Spacings
+/// Letter Spacings - Fixed
+$letter-spacing-fixed-normal: normal;
+$letter-spacing-fixed-0: 0;
+$letter-spacing-fixed-100: 0.05rem;
+$letter-spacing-fixed-200: 0.1rem;
+$letter-spacing-fixed-300: 0.3rem;
+$letter-spacing-fixed-400: 0.5rem;
+$letter-spacing-fixed-500: 0.8rem;
+$letter-spacing-fixed-600: 1rem;
+$letter-spacing-fixed-700: 1.5rem;
+$letter-spacing-fixed-800: 2rem;
+$letter-spacing-fixed-900: 3rem;
+$letter-spacing-fixed-1000: 4rem;
+
+/// Letter Spacings - Variable
+$letter-spacing-variable-normal: normal;
+$letter-spacing-variable-0: 0;
+$letter-spacing-variable-100: 0.05em;
+$letter-spacing-variable-200: 0.1em;
+$letter-spacing-variable-300: 0.3em;
+$letter-spacing-variable-400: 0.5em;
+$letter-spacing-variable-500: 0.8em;
+$letter-spacing-variable-600: 1em;
+$letter-spacing-variable-700: 1.5em;
+$letter-spacing-variable-800: 2em;
+$letter-spacing-variable-900: 3em;
+$letter-spacing-variable-1000: 4em;
+
 /// Variables - Breakpoints
 $breakpoint-0: 0;
 $breakpoint-sm: 640px;
