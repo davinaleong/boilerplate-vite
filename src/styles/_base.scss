@@ -6,6 +6,10 @@
     }
   }
 
+  @each $key, $value in $map-brand-colour {
+    --clr-brand-#{$key}: #{$value};
+  }
+
   /* Font Families */
   @each $key, $value in $map-font-family {
     --ff-#{$key}: #{$value};
@@ -44,6 +48,26 @@
   /* Variable Spacers (One-up) */
   @each $key, $value in $map-spacer-variable-one-up {
     --v-o-#{$key}: #{$value};
+  }
+
+  /* Fixed Line Heights */
+  @each $key, $value in $map-line-height-fixed {
+    --lh-f-#{$key}: #{$value};
+  }
+
+  /* Variable Line Heights */
+  @each $key, $value in $map-line-height-variable {
+    --lh-v-#{$key}: #{$value};
+  }
+
+  /* Fixed Letter Spacings */
+  @each $key, $value in $map-letter-spacing-fixed {
+    --ls-f-#{$key}: #{$value};
+  }
+
+  /* Variable Letter Spacings */
+  @each $key, $value in $map-letter-spacing-variable {
+    --ls-v-#{$key}: #{$value};
   }
 
   /* Layers (Z-index) */

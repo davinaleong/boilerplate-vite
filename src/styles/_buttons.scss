@@ -1,0 +1,49 @@
+.btn {
+  --_clr: var(--clr-gray-0);
+  --_bg-clr: var(--clr-blue-500);
+  --_border: thin solid var(--clr-blue-500);
+  --_opacity: 1;
+
+  --_hover-clr: var(--clr-gray-0);
+  --_hover-bg-clr: var(--clr-gray-700);
+  --_hover-border: thin solid var(--clr-gray-700);
+  --_hover-opacity: 1;
+
+  --_spacer-block: var(--v-200);
+  --_spacer-inline: var(--v-300);
+
+  display: inline-flex;
+  gap: var(--v-200);
+  align-items: center;
+  padding-block-start: var(--_spacer-block);
+  padding-block-end: var(--_spacer-block);
+  padding-inline-start: var(--_spacer-inline);
+  padding-inline-end: var(--_spacer-inline);
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--_clr);
+  background-color: var(--_bg-clr);
+  border: var(--_border);
+  opacity: var(--_opacity);
+  border-radius: var(--v-100);
+
+  &:hover {
+    color: var(--_hover-clr);
+    background-color: var(--_hover-bg-clr);
+    border: var(--_hover-border);
+    opacity: var(--_hover-opacity);
+    text-decoration: none;
+  }
+
+  @each $key, $value in $map-colour {
+    &-#{$key} {
+      --_clr: var(--clr-gray-0);
+      --_bg-clr: var(--clr-#{$key}-500);
+      --_border: thin solid var(--clr-#{$key}-500);
+
+      --_hover-clr: var(--clr-gray-0);
+      --_hover-bg-clr: var(--clr-#{$key}-700);
+      --_hover-border: thin solid var(--clr-#{$key}-700);
+    }
+  }
+}
