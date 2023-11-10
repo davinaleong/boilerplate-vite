@@ -1,1 +1,32 @@
 // General Custom Styles
+:root {
+  --flow-spacer: theme("gap.4");
+}
+
+a {
+  --_a-clr: theme("colors.blue.500");
+  --_a-td: none;
+
+  --_a-hover-clr: theme("colors.blue.500");
+  --_a-hover-td: underline;
+
+  color: var(--_a-clr);
+  text-decoration: var(--_a-td);
+
+  &:hover {
+    color: var(--_a-hover-clr);
+    text-decoration: var(--_a-hover-td);
+  }
+}
+
+.flow {
+  --_flow-spacer: var(--flow-spacer);
+
+  & > * + * {
+    margin-block-start: var(--_flow-spacer);
+  }
+}
+
+.clickable {
+  cursor: pointer;
+}
