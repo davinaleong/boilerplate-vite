@@ -554,16 +554,16 @@ $justify-items-right: right;
 /// Variables - Borders
 /// Borders - Widths
 $border-width-0: 0;
-$border-width-100: 1px;
-$border-width-200: 2px;
-$border-width-300: 3px;
-$border-width-400: 6px;
-$border-width-500: 0.1rem;
-$border-width-600: 0.1em;
-$border-width-700: 0.5rem;
-$border-width-800: 0.5em;
-$border-width-900: 1rem;
-$border-width-1000: 1em;
+$border-width-100: 0.01em;
+$border-width-200: 0.02em;
+$border-width-300: 0.05em;
+$border-width-400: 0.08em;
+$border-width-500: 0.1em;
+$border-width-600: 0.2em;
+$border-width-700: 0.5em;
+$border-width-800: 0.8em;
+$border-width-900: 1em;
+$border-width-1000: 1.5em;
 
 /// Borders - Styles
 $border-style-none: none;
