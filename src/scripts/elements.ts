@@ -5,6 +5,7 @@ import {
   getElements,
   now,
   DATA_CELL_ATTR,
+  addTableAria,
 } from "./helpers.ts"
 import { config } from "./config.ts"
 
@@ -32,6 +33,8 @@ export function initTables(): void {
       }
     }
   }
+
+  addTableAria()
 }
 
 export function renderCopyright(): void {
