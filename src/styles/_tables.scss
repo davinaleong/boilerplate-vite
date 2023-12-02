@@ -39,7 +39,6 @@ table {
     padding-block-end: var(--_spacer-block);
     padding-inline-start: var(--_spacer-inline);
     padding-inline-end: var(--_spacer-inline);
-    font-family: theme("fontFamily.serif");
     font-weight: theme("fontWeight.bold");
   }
 
@@ -51,4 +50,14 @@ table {
 
 .table-responsive {
   overflow-x: auto;
+}
+
+@media (width < theme("screens.sm")) {
+  th {
+    display: none;
+  }
+
+  td {
+    display: block;
+  }
 }

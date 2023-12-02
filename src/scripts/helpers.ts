@@ -1,3 +1,5 @@
+logLoaded(`helpers.ts`)
+
 export interface HelpersInterface {
   dataElementAttr: string
   dataActiveAttr: string
