@@ -23,15 +23,19 @@ table {
   }
 
   caption,
+  .caption,
   th,
-  td {
+  .th,
+  td,
+  .td {
     padding-block-start: var(--_spacer-block);
     padding-block-end: var(--_spacer-block);
     padding-inline-start: var(--_spacer-inline);
     padding-inline-end: var(--_spacer-inline);
   }
 
-  caption {
+  caption,
+  .caption {
     text-align: left;
     text-transform: uppercase;
     letter-spacing: theme("letterSpacing.1");
@@ -42,7 +46,8 @@ table {
     font-weight: theme("fontWeight.bold");
   }
 
-  th {
+  th,
+  .th {
     text-align: left;
     font-weight: theme("fontWeight.bold");
   }
@@ -52,12 +57,12 @@ table {
   overflow-x: auto;
 }
 
-@media (width < theme("screens.sm")) {
-  th {
-    display: none;
-  }
+// @media (width < theme("screens.sm")) {
+//   th {
+//     display: none;
+//   }
 
-  td {
-    display: block;
-  }
-}
+//   td {
+//     display: block;
+//   }
+// }

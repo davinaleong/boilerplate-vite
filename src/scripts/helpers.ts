@@ -1,22 +1,24 @@
 logLoaded(`helpers.ts`)
 
 export interface HelpersInterface {
-  dataElementAttr: string
-  dataActiveAttr: string
+  DATA_ELEMENT_ATTR: string
+  DATA_ACTIVE_ATTR: string
+  DATA_CELL_ATTR: string
   now: Date
   logFunction(name: string, params?: any): void
   logValue(name: string, value: string | number | boolean | null): void
   logLoaded(name: string): void
   getElement(name: string, parent?: HTMLElement): HTMLElement | null
-  getAllElements(name: string, parent?: HTMLElement): NodeListOf<Element>
+  getElements(name: string, parent?: HTMLElement): NodeListOf<HTMLElement>
   toggleAttribute(element: HTMLElement, toggle: boolean, attr: string): void
 }
 
-export const dataElementAttr: string = `data-element`
-export const dataActiveAttr: string = `data-active`
+export const DATA_ELEMENT_ATTR: string = `data-element`
+export const DATA_ACTIVE_ATTR: string = `data-active`
+export const DATA_CELL_ATTR: string = `data-cell`
 export const now: Date = new Date()
 
-export function logFunction(name: string, params?: any = {}): void {
+export function logFunction(name: string, params: any = {}): void {
   console.log(`fn: ${name}:(${JSON.stringify(params)})`)
 }
 
@@ -38,29 +40,29 @@ export function getElement(
   logFunction(`getElement`, { name, parent })
 
   if (parent) {
-    return parent.querySelector(`[${dataElementAttr}="${name}"]`)
+    return parent.querySelector(`[${DATA_ELEMENT_ATTR}="${name}"]`)
   }
 
-  return document.querySelector(`[${dataElementAttr}="${name}"]`)
+  return document.querySelector(`[${DATA_ELEMENT_ATTR}="${name}"]`)
 }
 
-export function getAllElements(
+export function getElements(
   name: string,
   parent?: HTMLElement
-): NodeListOf<Element> {
+): NodeListOf<HTMLElement> {
   logFunction(`getElement`, { name, parent })
 
   if (parent) {
-    return parent.querySelectorAll(`[${dataElementAttr}="${name}"]`)
+    return parent.querySelectorAll(`[${DATA_ELEMENT_ATTR}="${name}"]`)
   }
 
-  return document.querySelectorAll(`[${dataElementAttr}="${name}"]`)
+  return document.querySelectorAll(`[${DATA_ELEMENT_ATTR}="${name}"]`)
 }
 
 export function toggleAttribute(
   element: HTMLElement,
   toggle: boolean = false,
-  attr: string = dataActiveAttr
+  attr: string = DATA_ACTIVE_ATTR
 ): void {
   logFunction(`toggleAttribute`, { element, toggle, attr })
 
@@ -72,13 +74,14 @@ export function toggleAttribute(
 }
 
 export const helpers: HelpersInterface = {
-  dataElementAttr,
-  dataActiveAttr,
+  DATA_ELEMENT_ATTR,
+  DATA_ACTIVE_ATTR,
+  DATA_CELL_ATTR,
   now,
   logFunction,
   logValue,
   logLoaded,
   getElement,
-  getAllElements,
+  getElements,
   toggleAttribute,
 }
