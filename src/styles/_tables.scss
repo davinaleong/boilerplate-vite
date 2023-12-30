@@ -4,27 +4,29 @@
 
 table,
 .table {
-  --_border: thin solid theme("colors.neutral.300");
-  --_spacer-block: theme("padding.2");
-  --_spacer-inline: theme("padding.3");
+  --_table-border: thin solid theme("colors.neutral.300");
+  --_table-spacer-block: theme("padding.2");
+  --_table-spacer-inline: theme("padding.3");
+  --_table-bg: theme("colors.neutral.50");
+  --_table-bg-alt: theme("colors.neutral.100");
 
   text-align: left;
   width: 100%;
 
   thead > tr:last-child {
-    border-bottom: var(--_border);
+    border-bottom: var(--_table-border);
   }
 
   tbody > tr {
-    border-bottom: var(--_border);
+    border-bottom: var(--_table-border);
   }
 
   tfoot > tr:first-child {
-    border-top: var(--_border);
+    border-top: var(--_table-border);
   }
 
   tfoot > tr:last-child {
-    border-bottom: var(--_border);
+    border-bottom: var(--_table-border);
   }
 
   caption,
@@ -33,10 +35,10 @@ table,
   .th,
   td,
   .td {
-    padding-block-start: var(--_spacer-block);
-    padding-block-end: var(--_spacer-block);
-    padding-inline-start: var(--_spacer-inline);
-    padding-inline-end: var(--_spacer-inline);
+    padding-block-start: var(--_table-spacer-block);
+    padding-block-end: var(--_table-spacer-block);
+    padding-inline-start: var(--_table-spacer-inline);
+    padding-inline-end: var(--_table-spacer-inline);
   }
 
   caption,
@@ -44,10 +46,10 @@ table,
     text-align: left;
     text-transform: uppercase;
     letter-spacing: theme("letterSpacing.1");
-    padding-block-start: var(--_spacer-block);
-    padding-block-end: var(--_spacer-block);
-    padding-inline-start: var(--_spacer-inline);
-    padding-inline-end: var(--_spacer-inline);
+    padding-block-start: var(--_table-spacer-block);
+    padding-block-end: var(--_table-spacer-block);
+    padding-inline-start: var(--_table-spacer-inline);
+    padding-inline-end: var(--_table-spacer-inline);
     font-weight: theme("fontWeight.bold");
   }
 
@@ -85,21 +87,26 @@ table,
         content: attr(data-cell) ":";
       }
     }
+  }
 
-    &:nth-of-type(9) {
-      color: theme("colors.neutral.50");
-    }
+  .table-custom-colors {
+    td,
+    .td {
+      &:nth-of-type(9) {
+        color: theme("colors.neutral.50");
+      }
 
-    &:nth-of-type(10) {
-      color: theme("colors.neutral.50");
-    }
+      &:nth-of-type(10) {
+        color: theme("colors.neutral.50");
+      }
 
-    &:nth-of-type(11) {
-      color: theme("colors.neutral.50");
-    }
+      &:nth-of-type(11) {
+        color: theme("colors.neutral.50");
+      }
 
-    &:nth-of-type(12) {
-      color: theme("colors.neutral.50");
+      &:nth-of-type(12) {
+        color: theme("colors.neutral.50");
+      }
     }
   }
 }

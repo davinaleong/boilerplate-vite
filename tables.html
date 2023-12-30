@@ -14,6 +14,12 @@
     <script defer type="module" src="/src/scripts/app.ts"></script>
   </head>
   <body>
+    <a href="#main" class="btn">Skip Navigation</a>
+    <button type="button" class="btn btn-theme">
+      Theme: <span class="btn-theme__label-dark">Dark</span
+      ><span class="btn-theme__label-light">light</span>
+    </button>
+
     <header class="bg-blue-100">
       <div class="wrapper | mx-auto flow p-4">
         <h1 class="text-slate-700 text-4xl font-serif">
@@ -26,7 +32,7 @@
         ></nav>
       </div>
     </header>
-    <main class="wrapper | mx-auto flow p-4">
+    <main id="main" class="wrapper | mx-auto flow p-4">
       <section id="tables" class="flow py-4">
         <h2 class="text-4xl font-serif">Tables</h2>
 
@@ -35,6 +41,322 @@
           <table class="table" data-element="table">
             <caption>
               Default Table
+            </caption>
+            <thead>
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Occupation</th>
+                <th>Age Group</th>
+                <th>Hobbies</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-col="First Name">James</td>
+                <td data-col="Last Name">Smith</td>
+                <td data-col="Email">james.smith@example.com</td>
+                <td data-col="Occupation">Doctor</td>
+                <td data-col="Age Group">30-49 years</td>
+                <td data-col="Hobbies">Reading</td>
+              </tr>
+              <tr>
+                <td data-col="First Name">Jenny</td>
+                <td data-col="Last Name">German</td>
+                <td data-col="Email">jenn.ger@example.com</td>
+                <td data-col="Occupation">Counsellor</td>
+                <td data-col="Age Group">20-29 years</td>
+                <td data-col="Hobbies">Croquetting</td>
+              </tr>
+              <tr>
+                <td data-col="First Name">John</td>
+                <td data-col="Last Name">Doe</td>
+                <td data-col="Email">john.doe@example.com</td>
+                <td data-col="Occupation">Footballer</td>
+                <td data-col="Age Group">30-49 years</td>
+                <td data-col="Hobbies">Running</td>
+              </tr>
+              <tr>
+                <td data-col="First Name">Jane</td>
+                <td data-col="Last Name">Doe</td>
+                <td data-col="Email">jane.doe@example.com</td>
+                <td data-col="Occupation">Cook</td>
+                <td data-col="Age Group">50-69 years</td>
+                <td data-col="Hobbies">Cooking</td>
+              </tr>
+              <tr>
+                <td data-col="First Name">Mills</td>
+                <td data-col="Last Name">Smith</td>
+                <td data-col="Email">smith.mills@example.com</td>
+                <td data-col="Occupation">Libarian</td>
+                <td data-col="Age Group">50-69 years</td>
+                <td data-col="Hobbies">Reading</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- ./table-responsive -->
+
+        <h3 class="text-3xl font-serif">Bordered</h3>
+        <div class="table-responsive">
+          <table class="table table-bordered" data-element="table">
+            <caption>
+              Bordered Table
+            </caption>
+            <thead>
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Occupation</th>
+                <th>Age Group</th>
+                <th>Hobbies</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-col="First Name">James</td>
+                <td data-col="Last Name">Smith</td>
+                <td data-col="Email">james.smith@example.com</td>
+                <td data-col="Occupation">Doctor</td>
+                <td data-col="Age Group">30-49 years</td>
+                <td data-col="Hobbies">Reading</td>
+              </tr>
+              <tr>
+                <td data-col="First Name">Jenny</td>
+                <td data-col="Last Name">German</td>
+                <td data-col="Email">jenn.ger@example.com</td>
+                <td data-col="Occupation">Counsellor</td>
+                <td data-col="Age Group">20-29 years</td>
+                <td data-col="Hobbies">Croquetting</td>
+              </tr>
+              <tr>
+                <td data-col="First Name">John</td>
+                <td data-col="Last Name">Doe</td>
+                <td data-col="Email">john.doe@example.com</td>
+                <td data-col="Occupation">Footballer</td>
+                <td data-col="Age Group">30-49 years</td>
+                <td data-col="Hobbies">Running</td>
+              </tr>
+              <tr>
+                <td data-col="First Name">Jane</td>
+                <td data-col="Last Name">Doe</td>
+                <td data-col="Email">jane.doe@example.com</td>
+                <td data-col="Occupation">Cook</td>
+                <td data-col="Age Group">50-69 years</td>
+                <td data-col="Hobbies">Cooking</td>
+              </tr>
+              <tr>
+                <td data-col="First Name">Mills</td>
+                <td data-col="Last Name">Smith</td>
+                <td data-col="Email">smith.mills@example.com</td>
+                <td data-col="Occupation">Libarian</td>
+                <td data-col="Age Group">50-69 years</td>
+                <td data-col="Hobbies">Reading</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- ./table-responsive -->
+
+        <h3 class="text-3xl font-serif">Hover</h3>
+        <div class="table-responsive">
+          <table class="table table-hover" data-element="table">
+            <caption>
+              Hover Effect
+            </caption>
+            <thead>
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Occupation</th>
+                <th>Age Group</th>
+                <th>Hobbies</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-col="First Name">James</td>
+                <td data-col="Last Name">Smith</td>
+                <td data-col="Email">james.smith@example.com</td>
+                <td data-col="Occupation">Doctor</td>
+                <td data-col="Age Group">30-49 years</td>
+                <td data-col="Hobbies">Reading</td>
+              </tr>
+              <tr>
+                <td data-col="First Name">Jenny</td>
+                <td data-col="Last Name">German</td>
+                <td data-col="Email">jenn.ger@example.com</td>
+                <td data-col="Occupation">Counsellor</td>
+                <td data-col="Age Group">20-29 years</td>
+                <td data-col="Hobbies">Croquetting</td>
+              </tr>
+              <tr>
+                <td data-col="First Name">John</td>
+                <td data-col="Last Name">Doe</td>
+                <td data-col="Email">john.doe@example.com</td>
+                <td data-col="Occupation">Footballer</td>
+                <td data-col="Age Group">30-49 years</td>
+                <td data-col="Hobbies">Running</td>
+              </tr>
+              <tr>
+                <td data-col="First Name">Jane</td>
+                <td data-col="Last Name">Doe</td>
+                <td data-col="Email">jane.doe@example.com</td>
+                <td data-col="Occupation">Cook</td>
+                <td data-col="Age Group">50-69 years</td>
+                <td data-col="Hobbies">Cooking</td>
+              </tr>
+              <tr>
+                <td data-col="First Name">Mills</td>
+                <td data-col="Last Name">Smith</td>
+                <td data-col="Email">smith.mills@example.com</td>
+                <td data-col="Occupation">Libarian</td>
+                <td data-col="Age Group">50-69 years</td>
+                <td data-col="Hobbies">Reading</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- ./table-responsive -->
+
+        <h3 class="text-3xl font-serif">Striped</h3>
+        <div class="table-responsive">
+          <table class="table table-striped" data-element="table">
+            <caption>
+              Striped Table
+            </caption>
+            <thead>
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Occupation</th>
+                <th>Age Group</th>
+                <th>Hobbies</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-col="First Name">James</td>
+                <td data-col="Last Name">Smith</td>
+                <td data-col="Email">james.smith@example.com</td>
+                <td data-col="Occupation">Doctor</td>
+                <td data-col="Age Group">30-49 years</td>
+                <td data-col="Hobbies">Reading</td>
+              </tr>
+              <tr>
+                <td data-col="First Name">Jenny</td>
+                <td data-col="Last Name">German</td>
+                <td data-col="Email">jenn.ger@example.com</td>
+                <td data-col="Occupation">Counsellor</td>
+                <td data-col="Age Group">20-29 years</td>
+                <td data-col="Hobbies">Croquetting</td>
+              </tr>
+              <tr>
+                <td data-col="First Name">John</td>
+                <td data-col="Last Name">Doe</td>
+                <td data-col="Email">john.doe@example.com</td>
+                <td data-col="Occupation">Footballer</td>
+                <td data-col="Age Group">30-49 years</td>
+                <td data-col="Hobbies">Running</td>
+              </tr>
+              <tr>
+                <td data-col="First Name">Jane</td>
+                <td data-col="Last Name">Doe</td>
+                <td data-col="Email">jane.doe@example.com</td>
+                <td data-col="Occupation">Cook</td>
+                <td data-col="Age Group">50-69 years</td>
+                <td data-col="Hobbies">Cooking</td>
+              </tr>
+              <tr>
+                <td data-col="First Name">Mills</td>
+                <td data-col="Last Name">Smith</td>
+                <td data-col="Email">smith.mills@example.com</td>
+                <td data-col="Occupation">Libarian</td>
+                <td data-col="Age Group">50-69 years</td>
+                <td data-col="Hobbies">Reading</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- ./table-responsive -->
+
+        <h3 class="text-3xl font-serif">Colored</h3>
+        <div class="table-responsive">
+          <table
+            class="table table-colored table-colored-blue"
+            data-element="table"
+          >
+            <caption>
+              Colored (Blue)
+            </caption>
+            <thead>
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Occupation</th>
+                <th>Age Group</th>
+                <th>Hobbies</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-col="First Name">James</td>
+                <td data-col="Last Name">Smith</td>
+                <td data-col="Email">james.smith@example.com</td>
+                <td data-col="Occupation">Doctor</td>
+                <td data-col="Age Group">30-49 years</td>
+                <td data-col="Hobbies">Reading</td>
+              </tr>
+              <tr>
+                <td data-col="First Name">Jenny</td>
+                <td data-col="Last Name">German</td>
+                <td data-col="Email">jenn.ger@example.com</td>
+                <td data-col="Occupation">Counsellor</td>
+                <td data-col="Age Group">20-29 years</td>
+                <td data-col="Hobbies">Croquetting</td>
+              </tr>
+              <tr>
+                <td data-col="First Name">John</td>
+                <td data-col="Last Name">Doe</td>
+                <td data-col="Email">john.doe@example.com</td>
+                <td data-col="Occupation">Footballer</td>
+                <td data-col="Age Group">30-49 years</td>
+                <td data-col="Hobbies">Running</td>
+              </tr>
+              <tr>
+                <td data-col="First Name">Jane</td>
+                <td data-col="Last Name">Doe</td>
+                <td data-col="Email">jane.doe@example.com</td>
+                <td data-col="Occupation">Cook</td>
+                <td data-col="Age Group">50-69 years</td>
+                <td data-col="Hobbies">Cooking</td>
+              </tr>
+              <tr>
+                <td data-col="First Name">Mills</td>
+                <td data-col="Last Name">Smith</td>
+                <td data-col="Email">smith.mills@example.com</td>
+                <td data-col="Occupation">Libarian</td>
+                <td data-col="Age Group">50-69 years</td>
+                <td data-col="Hobbies">Reading</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- ./table-responsive -->
+
+        <h3 class="text-3xl font-serif">Colored and Striped</h3>
+        <div class="table-responsive">
+          <table
+            class="table table-striped table-colored table-colored-blue"
+            data-element="table"
+          >
+            <caption>
+              Colored and Striped
             </caption>
             <thead>
               <tr>

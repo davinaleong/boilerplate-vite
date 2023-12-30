@@ -4,6 +4,19 @@
   --flow-spacer: theme("gap.4");
 }
 
+body {
+  font-family: theme("fontFamily.sans");
+  font-size: theme("fontSize.base");
+  color: theme("colors.gray.900");
+  background-color: theme("colors.gray.50");
+
+  &.theme-dark,
+  [data-theme="dark"] & {
+    color: theme("colors.gray.50");
+    background-color: theme("colors.gray.900");
+  }
+}
+
 a {
   --_a-clr: theme("colors.blue.500");
   --_a-td: none;
@@ -74,4 +87,11 @@ ul.list {
 
 ol.list {
   list-style-type: decimal;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: theme("colors.gray.50");
+    background-color: theme("colors.gray.900");
+  }
 }
