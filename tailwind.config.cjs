@@ -3,11 +3,6 @@ module.exports = {
   content: ["*.html", "./src/**/*.{html,js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      fontFamily: {
-        sans: "Inter, Arial, sans-serif",
-        serif: "'Playfair Display', 'Times New Roman', serif",
-        monospace: "Inconsolata, 'Courier New', monospace",
-      },
       fontSize: {
         "2xs": "clamp(0.64rem, calc(0.66rem + 0.02vw), 0.65rem)",
         xs: "clamp(0.78rem, calc(0.77rem + 0.03vw), 0.8rem)",
@@ -77,4 +72,4 @@ module.exports = {
     },
   },
   plugins: [],
-};
+}
