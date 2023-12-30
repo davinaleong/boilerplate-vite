@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/svg+xml" href="/src/assets/images/logo.svg" />
+
+    <title>Boilerplate Vite - Buttons</title>
+    <script
+      src="https://kit.fontawesome.com/1b82ea5cb2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer type="module" src="/src/scripts/app.ts"></script>
+  </head>
+  <body>
+    <a href="#main" class="btn btn-skip-navigation">Skip Navigation</a>
+
+    <button type="button" class="btn btn-theme">
+      Theme: <span class="btn-theme__label-dark">Dark</span
+      ><span class="btn-theme__label-light">light</span>
+    </button>
+
+    <header class="bg-blue-100">
+      <div class="wrapper | mx-auto flow p-4">
+        <h1 class="text-slate-700 text-4xl font-serif">
+          Boilerplate Vite - <small>Buttons</small>
+        </h1>
+
+        <nav
+          class="bg-blue-200 flex gap-3 flex-wrap items-center"
+          data-element="header__nav"
+        ></nav>
+      </div>
+    </header>
+    <main id="main" class="wrapper | mx-auto flow p-4">
+      <section id="buttons" class="flow py-4">
+        <h2 class="text-4xl font-serif">Buttons</h2>
+
+        <h3 id="button-sizes" class="text-2xl font-serif">Sizes</h3>
+
+        <div class="flex flex-wrap gap-4 items-end">
+          <button type="button" class="btn btn-xs">.btn-xs</button>
+          <button type="button" class="btn btn-sm">.btn-sm</button>
+          <button type="button" class="btn">Default</button>
+          <button type="button" class="btn btn-lg">.btn-lg</button>
+          <button type="button" class="btn btn-xl">.btn-xl</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="wrapper | mx-auto flow p-4"></footer>
+  </body>
+</html>

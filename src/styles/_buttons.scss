@@ -109,6 +109,13 @@
   }
 
   &-sm {
+    --_btn-spacer-block: theme("padding.1");
+    --_btn-spacer-inline: theme("padding.2");
+
+    font-size: theme("fontSize.xs");
+  }
+
+  &-sm {
     --_btn-spacer-block: theme("padding.2");
     --_btn-spacer-inline: theme("padding.3");
 
@@ -120,6 +127,13 @@
     --_btn-spacer-inline: theme("padding.5");
 
     font-size: theme("fontSize.lg");
+  }
+
+  &-xl {
+    --_btn-spacer-block: theme("padding.5");
+    --_btn-spacer-inline: theme("padding.6");
+
+    font-size: theme("fontSize.xl");
   }
 
   &-print {

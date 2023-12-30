@@ -64,7 +64,7 @@ export function renderHeaderNav(): void {
   headerNavEl.innerHTML = `
     <a href="index.html">Home</a>
     <a href="type.html">Type</a>
-    <a href="elements.html">Elements</a>
+    <a href="buttons.html">Buttons</a>
     <a href="content.html">Content Grid</a>
     <a href="tables.html">Tables</a>
     `
