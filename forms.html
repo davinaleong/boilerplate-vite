@@ -36,6 +36,7 @@
           <a href="#form-fields">Fields Styles</a>
           <a href="#form-groups">Group Styles</a>
           <a href="#form-styles">Form Styles</a>
+          <a href="#form-fieldsets">Fieldsets</a>
         </nav>
       </div>
     </header>
@@ -167,7 +168,7 @@
         </form>
       </section>
       <section id="form-styles" class="flow py-4">
-        <h2 class="text-4xl font-serif">Styles</h2>
+        <h2 class="text-4xl font-serif">Form Styles</h2>
 
         <h3 id="form-default" class="text-2xl font-serif">Default</h3>
 
@@ -276,6 +277,115 @@
               rows="10"
             ></textarea>
           </div>
+
+          <div class="form__buttons">
+            <button type="submit" class="btn btn-sm">Submit</button>
+            <button type="reset" class="btn btn-sm btn-neutral">Reset</button>
+          </div>
+        </form>
+      </section>
+      <section id="form-fieldsets" class="flow py-4">
+        <h2 class="text-4xl font-serif">Fieldsets</h2>
+
+        <form action="" class="form | flow">
+          <fieldset class="form__fieldset | flow">
+            <legend class="form__legend">Default</legend>
+
+            <div class="form__group | flow">
+              <label for="input-input" class="form__label">Input</label>
+              <input
+                name="input-input"
+                id="input-input"
+                type="input"
+                class="form__field"
+              />
+            </div>
+
+            <div class="form__group | flow">
+              <label for="input-select" class="form__label">Select</label>
+              <select name="input-select" id="input-select" class="form__field">
+                <option value="">Options</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+              </select>
+            </div>
+
+            <div class="form__group | flow">
+              <label for="input-textarea" class="form__label">Input</label>
+              <textarea
+                name="input-textarea"
+                id="input-textarea"
+                class="form__field"
+                rows="10"
+              ></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__fieldset form__fieldset-bordered | flow">
+            <legend class="form__legend">Bordered</legend>
+
+            <div class="form__group | flow">
+              <label for="input-input" class="form__label">Input</label>
+              <input
+                name="input-input"
+                id="input-input"
+                type="input"
+                class="form__field"
+              />
+            </div>
+
+            <div class="form__group | flow">
+              <label for="input-select" class="form__label">Select</label>
+              <select name="input-select" id="input-select" class="form__field">
+                <option value="">Options</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+              </select>
+            </div>
+
+            <div class="form__group | flow">
+              <label for="input-textarea" class="form__label">Input</label>
+              <textarea
+                name="input-textarea"
+                id="input-textarea"
+                class="form__field"
+                rows="10"
+              ></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__fieldset form__fieldset-shadow | flow">
+            <legend class="form__legend">Shadow</legend>
+
+            <div class="form__group | flow">
+              <label for="input-input" class="form__label">Input</label>
+              <input
+                name="input-input"
+                id="input-input"
+                type="input"
+                class="form__field"
+              />
+            </div>
+
+            <div class="form__group | flow">
+              <label for="input-select" class="form__label">Select</label>
+              <select name="input-select" id="input-select" class="form__field">
+                <option value="">Options</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+              </select>
+            </div>
+
+            <div class="form__group | flow">
+              <label for="input-textarea" class="form__label">Input</label>
+              <textarea
+                name="input-textarea"
+                id="input-textarea"
+                class="form__field"
+                rows="10"
+              ></textarea>
+            </div>
+          </fieldset>
 
           <div class="form__buttons">
             <button type="submit" class="btn btn-sm">Submit</button>

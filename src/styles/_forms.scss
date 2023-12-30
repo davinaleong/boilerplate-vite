@@ -10,6 +10,51 @@
   --_form-spacer-br: theme("borderRadius.sm");
   --_form-shadow: theme("boxShadow.md");
 
+  &__fieldset {
+    --_form-fieldset-spacer: theme("padding.4");
+
+    background-color: var(--_form-bg-clr);
+
+    &-bordered {
+      border-block-start: var(--_form-border);
+      border-block-end: var(--_form-border);
+      border-inline-start: var(--_form-border);
+      border-inline-end: var(--_form-border);
+      border-radius: var(--_form-spacer-br);
+      padding-block-start: var(--_form-fieldset-spacer);
+      padding-block-end: var(--_form-fieldset-spacer);
+      padding-inline-start: var(--_form-fieldset-spacer);
+      padding-inline-end: var(--_form-fieldset-spacer);
+      border-radius: var(--_form-spacer-br);
+
+      .form__legend {
+        padding-inline-start: var(--_form-spacer-inline);
+        padding-inline-end: var(--_form-spacer-inline);
+      }
+    }
+
+    &-shadow {
+      padding-block-start: var(--_form-fieldset-spacer);
+      padding-block-end: var(--_form-fieldset-spacer);
+      padding-inline-start: var(--_form-fieldset-spacer);
+      padding-inline-end: var(--_form-fieldset-spacer);
+      border-radius: var(--_form-spacer-br);
+      box-shadow: var(--_form-shadow);
+
+      .form__legend {
+        padding-inline-start: var(--_form-spacer-inline);
+        padding-inline-end: var(--_form-spacer-inline);
+      }
+    }
+  }
+
+  &__legend {
+    font-weight: theme("fontWeight.semibold");
+    text-transform: uppercase;
+    letter-spacing: theme("letterSpacing.1");
+    background-color: var(--_form-bg-clr);
+  }
+
   &__group {
     &-required {
       .form__label::after {
