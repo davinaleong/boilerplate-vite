@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/svg+xml" href="/src/assets/images/logo.svg" />
+
+    <title>Boilerplate Vite - Index</title>
+    <script
+      src="https://kit.fontawesome.com/1b82ea5cb2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer type="module" src="/src/scripts/app.ts"></script>
+  </head>
+  <body>
+    <main class="container mx-auto flow">
+      <h1 class="text-4xl font-serif">
+        Boilerplate Vite - <small>Elements</small>
+      </h1>
+
+      <div class="flex gap-3 flex-wrap">
+        <a href="#forms" class="btn btn-blue">Forms</a>
+        <a href="#tables" class="btn btn-blue">Tables</a>
+      </div>
+
+      <section id="forms" class="flow py-4">
+        <h2 class="text-3xl font-serif">Forms</h2>
+
+        <p class="text-grid">
+          <span>Strong:</span> <strong>Lorem Ipsum</strong>
+        </p>
+
+        <p class="text-grid">
+          <span>Icon:</span> <i class="fa-solid fa-flag"></i>
+        </p>
+
+        <p class="text-grid"><span>Emphasis:</span> <em>Lorem Ipsum</em></p>
+
+        <p class="text-grid"><span>Code:</span> <code>Lorem Ipsum</code></p>
+
+        <p class="text-grid"><span>Small:</span> <small>Lorem Ipsum</small></p>
+
+        <p class="text-grid">
+          <span>Sup:</span> <span>Lorem Ipsum<sup>2</sup></span>
+        </p>
+
+        <p class="text-grid">
+          <span>Sub:</span> <span>Lorem Ipsum<sub>2</sub></span>
+        </p>
+
+        <p class="text-grid"><span>Mark:</span> <mark>Lorem Ipsum</mark></p>
+
+        <p class="text-grid">
+          <span>Anchor:</span> <a href="#">Lorem Ipsum</a>
+        </p>
+
+        <p class="text-grid">
+          <span>Clickable:</span> <span class="clickable">Lorem Ipsum</span>
+        </p>
+      </section>
+
+      <section id="tables" class="flow p-v-block-400 border-block-end-gray-300">
+        <h2 class="text-4xl font-serif">Tables</h2>
+
+        <h3 class="text-3xl font-serif">Default</h3>
+        <div class="table-responsive">
+          <table data-element="table">
+            <caption>
+              Default Table
+            </caption>
+            <thead>
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Occupation</th>
+                <th>Age Group</th>
+                <th>Hobbies</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-col="First Name">James</td>
+                <td data-col="Last Name">Smith</td>
+                <td data-col="Email">james.smith@example.com</td>
+                <td data-col="Occupation">Doctor</td>
+                <td data-col="Age Group">30-49 years</td>
+                <td data-col="Hobbies">Reading</td>
+              </tr>
+              <tr>
+                <td data-col="First Name">Jenny</td>
+                <td data-col="Last Name">German</td>
+                <td data-col="Email">jenn.ger@example.com</td>
+                <td data-col="Occupation">Counsellor</td>
+                <td data-col="Age Group">20-29 years</td>
+                <td data-col="Hobbies">Croquetting</td>
+              </tr>
+              <tr>
+                <td data-col="First Name">John</td>
+                <td data-col="Last Name">Doe</td>
+                <td data-col="Email">john.doe@example.com</td>
+                <td data-col="Occupation">Footballer</td>
+                <td data-col="Age Group">30-49 years</td>
+                <td data-col="Hobbies">Running</td>
+              </tr>
+              <tr>
+                <td data-col="First Name">Jane</td>
+                <td data-col="Last Name">Doe</td>
+                <td data-col="Email">jane.doe@example.com</td>
+                <td data-col="Occupation">Cook</td>
+                <td data-col="Age Group">50-69 years</td>
+                <td data-col="Hobbies">Cooking</td>
+              </tr>
+              <tr>
+                <td data-col="First Name">Mills</td>
+                <td data-col="Last Name">Smith</td>
+                <td data-col="Email">smith.mills@example.com</td>
+                <td data-col="Occupation">Libarian</td>
+                <td data-col="Age Group">50-69 years</td>
+                <td data-col="Hobbies">Reading</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
