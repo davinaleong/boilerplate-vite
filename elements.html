@@ -14,16 +14,27 @@
     <script defer type="module" src="/src/scripts/app.ts"></script>
   </head>
   <body>
-    <main class="container mx-auto flow">
-      <h1 class="text-4xl font-serif">
-        Boilerplate Vite - <small>Elements</small>
-      </h1>
+    <header class="bg-blue-100">
+      <div class="wrapper | mx-auto flow p-4">
+        <h1 class="text-slate-700 text-4xl font-serif">
+          Boilerplate Vite - <small>Elements</small>
+        </h1>
 
-      <div class="flex gap-3 flex-wrap">
-        <a href="#forms" class="btn btn-blue">Forms</a>
-        <a href="#tables" class="btn btn-blue">Tables</a>
+        <div class="bg-blue-200 flex gap-3 flex-wrap">
+          <a href="index.html">Home</a>
+          <a href="type.html">Type</a>
+          <a href="elements.html">Elements</a>
+          <a href="content.html">Content Grid</a>
+          <a href="#">Link</a>
+        </div>
+
+        <div class="flex gap-3 flex-wrap">
+          <a href="#forms">Forms</a>
+          <a href="#tables">Tables</a>
+        </div>
       </div>
-
+    </header>
+    <main class="wrapper | mx-auto flow p-4">
       <section id="forms" class="flow py-4">
         <h2 class="text-3xl font-serif">Forms</h2>
 
@@ -125,5 +136,7 @@
         </div>
       </section>
     </main>
+
+    <footer class="wrapper | mx-auto flow p-4"></footer>
   </body>
 </html>

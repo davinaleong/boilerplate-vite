@@ -14,21 +14,32 @@
     <script defer type="module" src="/src/scripts/app.ts"></script>
   </head>
   <body>
-    <main class="flow">
-      <section class="content-grid p-4">
+    <header class="bg-blue-100">
+      <div class="wrapper | mx-auto flow p-4">
         <h1 class="text-4xl font-serif text-slate-700">
           Boilerplate Vite - <small>Content Grid</small>
         </h1>
 
-        <div class="flex gap-3 flex-wrap">
-          <a href="#base" class="btn btn-blue">Base</a>
-          <a href="#typography" class="btn btn-blue">Typography</a>
-          <a href="#colours" class="btn btn-blue">Colours</a>
-          <a href="content.html" class="btn btn-blue">Content</a>
+        <div class="bg-blue-200 flex gap-3 flex-wrap">
+          <a href="index.html">Home</a>
+          <a href="type.html">Type</a>
+          <a href="elements.html">Elements</a>
+          <a href="content.html">Content Grid</a>
+          <a href="#">Link</a>
         </div>
-      </section>
 
+        <div class="flex gap-3 flex-wrap">
+          <a href="#full-width">Full Width</a>
+          <a href="#default">Default</a>
+          <a href="#breakout">Breakout</a>
+          <a href="#default-2">Default 2</a>
+          <a href="#default-3">Default 3</a>
+        </div>
+      </div>
+    </header>
+    <main class="flow">
       <section
+        id="full-width"
         class="content-grid content-grid-full-width | flow bg-slate-200 p-4"
       >
         <h2 class="text-3xl font-serif text-slate-700">
@@ -65,7 +76,7 @@
         </p>
       </section>
 
-      <section class="content-grid | flow p-4">
+      <section id="default" class="content-grid | flow p-4">
         <h2 class="text-3xl font-serif text-slate-700">
           Lorem ipsum dolor sit amet.
         </h2>
@@ -100,7 +111,10 @@
         </p>
       </section>
 
-      <section class="content-grid content-grid-breakout | flow p-4">
+      <section
+        id="breakout"
+        class="content-grid content-grid-breakout | flow p-4"
+      >
         <h2 class="text-3xl font-serif text-slate-700">
           Lorem ipsum dolor sit amet.
         </h2>
@@ -135,7 +149,7 @@
         </p>
       </section>
 
-      <section class="content-grid | flow p-4">
+      <section id="default-2" class="content-grid | flow p-4">
         <h2 class="text-3xl font-serif text-slate-700">
           Lorem ipsum dolor sit amet.
         </h2>
@@ -170,7 +184,7 @@
         </p>
       </section>
 
-      <section class="content-grid | flow p-4">
+      <section id="default-3" class="content-grid | flow p-4">
         <h2 class="text-3xl font-serif text-slate-700">
           Lorem ipsum dolor sit amet.
         </h2>
@@ -205,5 +219,7 @@
         </p>
       </section>
     </main>
+
+    <footer class="wrapper mx-auto flow p-4"></footer>
   </body>
 </html>

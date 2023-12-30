@@ -14,18 +14,29 @@
     <script defer type="module" src="/src/scripts/app.ts"></script>
   </head>
   <body>
-    <main class="container mx-auto flow">
-      <h1 class="text-4xl font-serif">
-        Boilerplate Vite - <small>Type</small>
-      </h1>
+    <header class="bg-blue-100">
+      <div class="wrapper | flow mx-auto p-4">
+        <h1 class="text-slate-700 text-4xl font-serif">
+          Boilerplate Vite - <small>Type</small>
+        </h1>
 
-      <div class="flex gap-3 flex-wrap">
-        <a href="#base" class="btn btn-blue">Base</a>
-        <a href="#typography" class="btn btn-blue">Typography</a>
-        <a href="#colours" class="btn btn-blue">Colours</a>
-        <a href="content.html" class="btn btn-blue">Content</a>
+        <div class="bg-blue-200 flex gap-3 flex-wrap">
+          <a href="index.html">Home</a>
+          <a href="type.html">Type</a>
+          <a href="elements.html">Elements</a>
+          <a href="content.html">Content Grid</a>
+          <a href="#">Link</a>
+        </div>
+
+        <div class="flex gap-3 flex-wrap">
+          <a href="#base">Base</a>
+          <a href="#typography">Typography</a>
+          <a href="#colours">Colours</a>
+          <a href="content.html">Content</a>
+        </div>
       </div>
-
+    </header>
+    <main class="wrapper | p-4 mx-auto flow">
       <section id="base" class="flow py-4">
         <h2 class="text-3xl font-serif">Base</h2>
 
@@ -503,5 +514,7 @@
         </div>
       </section>
     </main>
+
+    <footer class="wrapper | mx-auto flow p-4"></footer>
   </body>
 </html>

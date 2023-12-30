@@ -60,3 +60,18 @@ a {
     }
   }
 }
+
+ul,
+ol {
+  &.list {
+    padding-inline-start: theme("padding.5");
+  }
+}
+
+ul.list {
+  list-style-type: disc;
+}
+
+ol.list {
+  list-style-type: decimal;
+}
