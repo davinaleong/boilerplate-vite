@@ -4,31 +4,17 @@
 
 table,
 .table {
-  --_table-border: thin solid theme("colors.neutral.300");
   --_table-spacer-block: theme("padding.2");
   --_table-spacer-inline: theme("padding.3");
+
+  --_table-clr: theme("colors.neutral.900");
   --_table-bg: theme("colors.neutral.50");
   --_table-bg-alt: theme("colors.neutral.100");
+  --_table-border-clr: theme("colors.neutral.300");
+  --_table-border: thin solid var(--_table-border-clr);
 
   text-align: left;
   width: 100%;
-
-  thead > tr:last-child {
-    border-bottom: var(--_table-border);
-  }
-
-  tbody > tr {
-    border-bottom: var(--_table-border);
-  }
-
-  tfoot > tr:first-child {
-    border-top: var(--_table-border);
-  }
-
-  tfoot > tr:last-child {
-    border-bottom: var(--_table-border);
-  }
-
   caption,
   .caption,
   th,
@@ -57,6 +43,196 @@ table,
   .th {
     text-align: left;
     font-weight: theme("fontWeight.bold");
+    color: var(--_table-clr);
+  }
+
+  th,
+  .th,
+  td,
+  .td {
+    background-color: var(--_table-bg);
+    border-block-end: var(--_table-border);
+  }
+
+  &-bordered {
+    th,
+    .th,
+    td,
+    .td {
+      border-block-start: var(--_table-border);
+      border-block-end: var(--_table-border);
+      border-inline-start: var(--_table-border);
+      border-inline-end: var(--_table-border);
+    }
+  }
+
+  &-hover {
+    tr:hover {
+      cursor: pointer;
+      background-color: var(--_table-bg-alt);
+    }
+  }
+
+  &-striped {
+    tr:nth-of-type(odd) td {
+      background-color: var(--_table-bg-alt);
+    }
+  }
+
+  &-colored {
+    &-slate {
+      --_table-clr: theme("colors.slate.900");
+      --_table-bg: theme("colors.slate.50");
+      --_table-bg-alt: theme("colors.slate.100");
+      --_table-border-clr: theme("colors.slate.300");
+    }
+
+    &-gray {
+      --_table-clr: theme("colors.gray.900");
+      --_table-bg: theme("colors.gray.50");
+      --_table-bg-alt: theme("colors.gray.100");
+      --_table-border-clr: theme("colors.gray.300");
+    }
+
+    &-zinc {
+      --_table-clr: theme("colors.zinc.900");
+      --_table-bg: theme("colors.zinc.50");
+      --_table-bg-alt: theme("colors.zinc.100");
+      --_table-border-clr: theme("colors.zinc.300");
+    }
+
+    &-neutral {
+      --_table-clr: theme("colors.neutral.900");
+      --_table-bg: theme("colors.neutral.50");
+      --_table-bg-alt: theme("colors.neutral.100");
+      --_table-border-clr: theme("colors.neutral.300");
+    }
+
+    &-stone {
+      --_table-clr: theme("colors.stone.900");
+      --_table-bg: theme("colors.stone.50");
+      --_table-bg-alt: theme("colors.stone.100");
+      --_table-border-clr: theme("colors.stone.300");
+    }
+
+    &-red {
+      --_table-clr: theme("colors.red.900");
+      --_table-bg: theme("colors.red.50");
+      --_table-bg-alt: theme("colors.red.100");
+      --_table-border-clr: theme("colors.red.300");
+    }
+
+    &-orange {
+      --_table-clr: theme("colors.orange.900");
+      --_table-bg: theme("colors.orange.50");
+      --_table-bg-alt: theme("colors.orange.100");
+      --_table-border-clr: theme("colors.orange.300");
+    }
+
+    &-amber {
+      --_table-clr: theme("colors.amber.900");
+      --_table-bg: theme("colors.amber.50");
+      --_table-bg-alt: theme("colors.amber.100");
+      --_table-border-clr: theme("colors.amber.300");
+    }
+
+    &-yellow {
+      --_table-clr: theme("colors.yellow.900");
+      --_table-bg: theme("colors.yellow.50");
+      --_table-bg-alt: theme("colors.yellow.100");
+      --_table-border-clr: theme("colors.yellow.300");
+    }
+
+    &-lime {
+      --_table-clr: theme("colors.lime.900");
+      --_table-bg: theme("colors.lime.50");
+      --_table-bg-alt: theme("colors.lime.100");
+      --_table-border-clr: theme("colors.lime.300");
+    }
+
+    &-green {
+      --_table-clr: theme("colors.green.900");
+      --_table-bg: theme("colors.green.50");
+      --_table-bg-alt: theme("colors.green.100");
+      --_table-border-clr: theme("colors.green.300");
+    }
+
+    &-emerald {
+      --_table-clr: theme("colors.emerald.900");
+      --_table-bg: theme("colors.emerald.50");
+      --_table-bg-alt: theme("colors.emerald.100");
+      --_table-border-clr: theme("colors.emerald.300");
+    }
+
+    &-teal {
+      --_table-clr: theme("colors.teal.900");
+      --_table-bg: theme("colors.teal.50");
+      --_table-bg-alt: theme("colors.teal.100");
+      --_table-border-clr: theme("colors.teal.300");
+    }
+
+    &-cyan {
+      --_table-clr: theme("colors.cyan.900");
+      --_table-bg: theme("colors.cyan.50");
+      --_table-bg-alt: theme("colors.cyan.100");
+      --_table-border-clr: theme("colors.cyan.300");
+    }
+
+    &-sky {
+      --_table-clr: theme("colors.sky.900");
+      --_table-bg: theme("colors.sky.50");
+      --_table-bg-alt: theme("colors.sky.100");
+      --_table-border-clr: theme("colors.sky.300");
+    }
+
+    &-blue {
+      --_table-clr: theme("colors.blue.900");
+      --_table-bg: theme("colors.blue.50");
+      --_table-bg-alt: theme("colors.blue.100");
+      --_table-border-clr: theme("colors.blue.300");
+    }
+
+    &-indigo {
+      --_table-clr: theme("colors.indigo.900");
+      --_table-bg: theme("colors.indigo.50");
+      --_table-bg-alt: theme("colors.indigo.100");
+      --_table-border-clr: theme("colors.indigo.300");
+    }
+
+    &-violet {
+      --_table-clr: theme("colors.violet.900");
+      --_table-bg: theme("colors.violet.50");
+      --_table-bg-alt: theme("colors.violet.100");
+      --_table-border-clr: theme("colors.violet.300");
+    }
+
+    &-purple {
+      --_table-clr: theme("colors.purple.900");
+      --_table-bg: theme("colors.purple.50");
+      --_table-bg-alt: theme("colors.purple.100");
+      --_table-border-clr: theme("colors.purple.300");
+    }
+
+    &-fuchsia {
+      --_table-clr: theme("colors.fuchsia.900");
+      --_table-bg: theme("colors.fuchsia.50");
+      --_table-bg-alt: theme("colors.fuchsia.100");
+      --_table-border-clr: theme("colors.fuchsia.300");
+    }
+
+    &-pink {
+      --_table-clr: theme("colors.pink.900");
+      --_table-bg: theme("colors.pink.50");
+      --_table-bg-alt: theme("colors.pink.100");
+      --_table-border-clr: theme("colors.pink.300");
+    }
+
+    &-rose {
+      --_table-clr: theme("colors.rose.900");
+      --_table-bg: theme("colors.rose.50");
+      --_table-bg-alt: theme("colors.rose.100");
+      --_table-border-clr: theme("colors.rose.300");
+    }
   }
 }
 

@@ -4,6 +4,11 @@
   --flow-spacer: theme("gap.4");
 }
 
+:focus {
+  outline: 2px solid theme("colors.neutral.950");
+  border: 2px solid theme("colors.neutral.50");
+}
+
 body {
   font-family: theme("fontFamily.sans");
   font-size: theme("fontSize.base");
