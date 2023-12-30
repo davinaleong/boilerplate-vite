@@ -33,17 +33,221 @@
         ></nav>
 
         <nav class="flex gap-3 flex-wrap items-center">
-          <a href="#form-default">Default</a>
+          <a href="#form-fields">Fields Styles</a>
+          <a href="#form-groups">Group Styles</a>
+          <a href="#form-styles">Form Styles</a>
         </nav>
       </div>
     </header>
     <main id="main" class="wrapper | mx-auto flow p-4">
-      <section id="forms" class="flow py-4">
-        <h2 class="text-4xl font-serif">Forms</h2>
+      <section id="form-fields" class="flow py-4">
+        <h2 class="text-4xl font-serif">Field Styles</h2>
+
+        <form action="" class="form | flow">
+          <div class="form__group | flow">
+            <label for="input-input" class="form__label">Default</label>
+            <input
+              name="input-input"
+              id="input-input"
+              type="input"
+              class="form__field"
+            />
+          </div>
+
+          <div class="form__group | flow">
+            <label for="input-input" class="form__label">Bordered</label>
+            <input
+              name="input-input"
+              id="input-input"
+              type="input"
+              class="form__field form__field-bordered"
+            />
+          </div>
+
+          <div class="form__group | flow">
+            <label for="input-input" class="form__label">Shadow</label>
+            <input
+              name="input-input"
+              id="input-input"
+              type="input"
+              class="form__field form__field-shadow"
+            />
+          </div>
+
+          <div class="form__group | flow">
+            <label for="input-input" class="form__label">Colored (Blue)</label>
+            <input
+              name="input-input"
+              id="input-input"
+              type="input"
+              class="form__field form__field-blue"
+            />
+          </div>
+
+          <div class="form__group | flow">
+            <label for="input-input" class="form__label">Colored (Amber)</label>
+            <input
+              name="input-input"
+              id="input-input"
+              type="input"
+              class="form__field form__field-amber"
+            />
+          </div>
+
+          <div class="form__buttons">
+            <button type="submit" class="btn btn-sm">Submit</button>
+            <button type="reset" class="btn btn-sm btn-neutral">Reset</button>
+          </div>
+        </form>
+      </section>
+      <section id="form-groups" class="flow py-4">
+        <h2 class="text-4xl font-serif">Group Styles</h2>
+
+        <form action="" class="form | flow">
+          <div class="form__group | flow">
+            <label for="input-input" class="form__label">Default</label>
+            <input
+              name="input-input"
+              id="input-input"
+              type="input"
+              class="form__field"
+            />
+          </div>
+
+          <div class="form__group form__group-required | flow">
+            <label for="input-input" class="form__label">Required</label>
+            <input
+              name="input-input"
+              id="input-input"
+              type="input"
+              class="form__field"
+            />
+          </div>
+
+          <div
+            class="form__group form__group-status form__group-status-warning | flow"
+          >
+            <label for="input-input" class="form__label">Warning</label>
+            <input
+              name="input-input"
+              id="input-input"
+              type="input"
+              class="form__field"
+            />
+          </div>
+
+          <div
+            class="form__group form__group-status form__group-status-error | flow"
+          >
+            <label for="input-input" class="form__label">Danger</label>
+            <input
+              name="input-input"
+              id="input-input"
+              type="input"
+              class="form__field"
+            />
+          </div>
+
+          <div
+            class="form__group form__group-status form__group-status-success | flow"
+          >
+            <label for="input-input" class="form__label">Success</label>
+            <input
+              name="input-input"
+              id="input-input"
+              type="input"
+              class="form__field"
+            />
+          </div>
+
+          <div class="form__buttons">
+            <button type="submit" class="btn btn-sm">Submit</button>
+            <button type="reset" class="btn btn-sm btn-neutral">Reset</button>
+          </div>
+        </form>
+      </section>
+      <section id="form-styles" class="flow py-4">
+        <h2 class="text-4xl font-serif">Styles</h2>
 
         <h3 id="form-default" class="text-2xl font-serif">Default</h3>
 
         <form action="" class="form | flow">
+          <div class="form__group | flow">
+            <label for="input-input" class="form__label">Input</label>
+            <input
+              name="input-input"
+              id="input-input"
+              type="input"
+              class="form__field"
+            />
+          </div>
+
+          <div class="form__group | flow">
+            <label for="input-select" class="form__label">Select</label>
+            <select name="input-select" id="input-select" class="form__field">
+              <option value="">Options</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+            </select>
+          </div>
+
+          <div class="form__group | flow">
+            <label for="input-textarea" class="form__label">Input</label>
+            <textarea
+              name="input-textarea"
+              id="input-textarea"
+              class="form__field"
+              rows="10"
+            ></textarea>
+          </div>
+
+          <div class="form__buttons">
+            <button type="submit" class="btn btn-sm">Submit</button>
+            <button type="reset" class="btn btn-sm btn-neutral">Reset</button>
+          </div>
+        </form>
+
+        <h3 id="form-bordered" class="text-2xl font-serif">Bordered</h3>
+
+        <form action="" class="form form-bordered | flow">
+          <div class="form__group | flow">
+            <label for="input-input" class="form__label">Input</label>
+            <input
+              name="input-input"
+              id="input-input"
+              type="input"
+              class="form__field"
+            />
+          </div>
+
+          <div class="form__group | flow">
+            <label for="input-select" class="form__label">Select</label>
+            <select name="input-select" id="input-select" class="form__field">
+              <option value="">Options</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+            </select>
+          </div>
+
+          <div class="form__group | flow">
+            <label for="input-textarea" class="form__label">Input</label>
+            <textarea
+              name="input-textarea"
+              id="input-textarea"
+              class="form__field"
+              rows="10"
+            ></textarea>
+          </div>
+
+          <div class="form__buttons">
+            <button type="submit" class="btn btn-sm">Submit</button>
+            <button type="reset" class="btn btn-sm btn-neutral">Reset</button>
+          </div>
+        </form>
+
+        <h3 id="form-shadow" class="text-2xl font-serif">Shadow</h3>
+
+        <form action="" class="form form-shadow | flow">
           <div class="form__group | flow">
             <label for="input-input" class="form__label">Input</label>
             <input
