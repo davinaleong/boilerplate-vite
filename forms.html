@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/svg+xml" href="/src/assets/images/logo.svg" />
+
+    <title>Boilerplate Vite - Forms</title>
+    <script
+      src="https://kit.fontawesome.com/1b82ea5cb2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer type="module" src="/src/scripts/app.ts"></script>
+  </head>
+  <body>
+    <a href="#main" class="btn btn-skip-navigation">Skip Navigation</a>
+
+    <button type="button" class="btn btn-theme">
+      Theme: <span class="btn-theme__label-dark">Dark</span
+      ><span class="btn-theme__label-light">light</span>
+    </button>
+
+    <header class="bg-blue-100">
+      <div class="wrapper | mx-auto flow p-4">
+        <h1 class="text-slate-700 text-4xl font-serif">
+          Boilerplate Vite - <small>Forms</small>
+        </h1>
+
+        <nav
+          class="bg-blue-200 flex gap-3 flex-wrap items-center"
+          data-element="header__nav"
+        ></nav>
+
+        <nav class="flex gap-3 flex-wrap items-center">
+          <a href="#form-default">Default</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="wrapper | mx-auto flow p-4">
+      <section id="forms" class="flow py-4">
+        <h2 class="text-4xl font-serif">Forms</h2>
+
+        <h3 id="form-default" class="text-2xl font-serif">Default</h3>
+
+        <form action="" class="form | flow">
+          <div class="form__group | flow">
+            <label for="input-input" class="form__label">Input</label>
+            <input
+              name="input-input"
+              id="input-input"
+              type="input"
+              class="form__field"
+            />
+          </div>
+
+          <div class="form__group | flow">
+            <label for="input-select" class="form__label">Select</label>
+            <select name="input-select" id="input-select" class="form__field">
+              <option value="">Options</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+            </select>
+          </div>
+
+          <div class="form__group | flow">
+            <label for="input-textarea" class="form__label">Input</label>
+            <textarea
+              name="input-textarea"
+              id="input-textarea"
+              class="form__field"
+              rows="10"
+            ></textarea>
+          </div>
+
+          <div class="form__buttons">
+            <button type="submit" class="btn btn-sm">Submit</button>
+            <button type="reset" class="btn btn-sm btn-neutral">Reset</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="wrapper | mx-auto flow p-4"></footer>
+  </body>
+</html>

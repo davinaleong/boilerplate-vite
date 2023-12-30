@@ -67,6 +67,7 @@ export function renderHeaderNav(): void {
     <a href="buttons.html">Buttons</a>
     <a href="content.html">Content Grid</a>
     <a href="tables.html">Tables</a>
+    <a href="forms.html">Forms</a>
     `
 }
 

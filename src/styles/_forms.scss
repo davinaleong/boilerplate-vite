@@ -1,0 +1,29 @@
+.form {
+  --_form-bg-clr: theme("colors.neutral.50");
+  --_form-border-clr: theme("colors.neutral.300");
+  --_form-border: thin solid var(--_form-border-clr);
+
+  --_form-spacer-block: theme("padding.2");
+  --_form-spacer-inline: theme("padding.3");
+
+  &__label {
+    display: block;
+  }
+
+  &__field {
+    background-color: var(--_form-bg-clr);
+    border-block-end: var(--_form-border);
+    display: block;
+    width: 100%;
+    padding-block-start: var(--_form-spacer-block);
+    padding-block-end: var(--_form-spacer-block);
+    padding-inline-start: var(--_form-spacer-inline);
+    padding-inline-end: var(--_form-spacer-inline);
+  }
+
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: theme("gap.2");
+  }
+}
