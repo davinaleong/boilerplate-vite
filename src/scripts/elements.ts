@@ -14,6 +14,7 @@ logLoaded(`elements.ts`)
 export interface ElementsInterface {
   initTables(): void
   renderCopyright(): void
+  renderHeaderNav(): void
 }
 
 export function initTables(): void {
@@ -54,7 +55,23 @@ export function renderCopyright(): void {
   }
 }
 
+export function renderHeaderNav(): void {
+  logFunction("renderHeaderNav")
+
+  const headerNavEl = getElement(`header__nav`)
+  if (!headerNavEl) return
+
+  headerNavEl.innerHTML = `
+    <a href="index.html">Home</a>
+    <a href="type.html">Type</a>
+    <a href="elements.html">Elements</a>
+    <a href="content.html">Content Grid</a>
+    <a href="tables.html">Tables</a>
+    `
+}
+
 export const elements: ElementsInterface = {
   initTables,
   renderCopyright,
+  renderHeaderNav,
 }

@@ -1,6 +1,6 @@
 import "../styles/app.scss"
 import { logFunction, logLoaded } from "./helpers"
-import { renderCopyright, initTables } from "./elements"
+import { renderCopyright, initTables, renderHeaderNav } from "./elements"
 
 logLoaded(`app.ts`)
 
@@ -10,6 +10,7 @@ logLoaded(`app.ts`)
 function main() {
   logFunction(`main`)
 
+  renderHeaderNav()
   renderCopyright()
   initTables()
 }
